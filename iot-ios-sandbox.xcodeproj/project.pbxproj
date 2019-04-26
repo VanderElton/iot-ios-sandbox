@@ -57,6 +57,7 @@
 		728BFD3A22731E470047FA83 /* iot_ios_sandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_ios_sandboxUITests.swift; sourceTree = "<group>"; };
 		728BFD3C22731E470047FA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728BFD4A22731E910047FA83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iot-ios-sandbox.entitlements"; sourceTree = "<group>"; };
 		77207E8E1148FA66AD4744A5 /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910DA166920898D59E7AC6BA /* Pods-iot-ios-sandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B65A2D79F7996E7236D31320 /* Pods-iot-ios-sandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		728BFD1922731E460047FA83 /* iot-ios-sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */,
 				728BFD4922731E5A0047FA83 /* auth */,
 				728BFD4822731E500047FA83 /* helper */,
 				728BFD1A22731E460047FA83 /* AppDelegate.swift */,
@@ -181,7 +183,6 @@
 				910DA166920898D59E7AC6BA /* Pods-iot-ios-sandboxUITests.debug.xcconfig */,
 				B65A2D79F7996E7236D31320 /* Pods-iot-ios-sandboxUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -257,6 +258,11 @@
 				TargetAttributes = {
 					728BFD1622731E460047FA83 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					728BFD2A22731E470047FA83 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -591,8 +597,9 @@
 			baseConfigurationReference = 1C4329A75E51F9362C241D9D /* Pods-iot-ios-sandbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iot-ios-sandbox/iot-ios-sandbox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,8 +617,9 @@
 			baseConfigurationReference = 12E26B9E8876473CDD3E2998 /* Pods-iot-ios-sandbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iot-ios-sandbox/iot-ios-sandbox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

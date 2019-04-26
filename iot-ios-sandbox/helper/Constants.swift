@@ -17,7 +17,7 @@ public struct Constants {
     static let TENANT = "devwegme.onmicrosoft.com"
     static let BASE_URL = "https://iot-api-dev.weg.net"
     
-    /* SHARED PREFERENCES KEYS */
+    /* UserDefaults KEYS */
     static let AUTH_PREFERENCES = "auth_preferences"
     static let ID_TOKEN_KEY = "msal.idtoken"
     

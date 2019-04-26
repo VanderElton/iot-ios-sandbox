@@ -12,6 +12,8 @@ import MSAL
 
 class ViewController: UIViewController,URLSessionDelegate {
     
+    var client : MSALPublicClientApplication?
+    
     //Mark: Properties
     @IBOutlet weak var acessButton: UIButton!
     @IBOutlet weak var statusText: UITextField!
@@ -21,34 +23,40 @@ class ViewController: UIViewController,URLSessionDelegate {
         
         do{
             guard let authorityURL = URL(string: String(format: Constants.ENDPOINT, Constants.TENANT, Constants.POLICY)) else {
-                self.statusText
+                self.statusText.text = "Error URL"
                 return
                 
             }
             let AUTHORITY = try MSALAuthority (url: authorityURL)
             
+            self.client = try MSALPublicClientApplication.init(clientId: Constants.CLIENT_ID, authority: AUTHORITY)
+            
         }catch let error{
-            self.
+            self.statusText.text = "Error to create App Context \(error)"
         }
+        
     }
     
     //Mark: Actions
     @IBAction func actionAcessButton(_ sender: UIButton) {
         
-        do{
-            let client = try MSALPublicClientApplication.init(clientId: Constants.CLIENT_ID, authority: AUTHORITY)
+        guard let client = self.client else {return}
+        
+        client.acquireToken(forScopes: Constants.SCOPES){ (result,error) in
             
-            client.acquireToken(forScopes: Constants.Scope){ (result,error) in
-                guard let authResult = result, error == nil else{
-                    return
-                }
-                let acessToken = authResult.accessToken
+            if let error = error{
+                self.statusText.text = "ERROR: \(error)"
             }
-        }catch{
             
-        }
-    }
+            guard let result = result else{
+                self.statusText.text = "ERROR"
+                return
+            }
+            
+            self.statusText.text = "Token: \(result)"
+            }
 
+    }
 
 }
 
