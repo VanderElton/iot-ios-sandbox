@@ -1,0 +1,6 @@
+framework module Pods_iot_ios_sandboxUITests {
+  umbrella header "Pods-iot-ios-sandboxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

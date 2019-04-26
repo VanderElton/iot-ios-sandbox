@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.8.2)
+  - MSAL (0.3.0):
+    - MSAL/app-lib (= 0.3.0)
+  - MSAL/app-lib (0.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - MSAL (~> 0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MSAL
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MSAL: c3a316eabb6bd90bc2ead7ceeff7ffb80dd36e84
+
+PODFILE CHECKSUM: 91d5e26de3c53269a294ff2b9f1df39726cca0a1
+
+COCOAPODS: 1.6.1
