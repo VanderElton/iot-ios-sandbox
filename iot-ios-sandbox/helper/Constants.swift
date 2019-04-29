@@ -17,6 +17,8 @@ public struct Constants {
     static let TENANT = "devwegme.onmicrosoft.com"
     static let BASE_URL = "https://iot-api-dev.weg.net"
     
+    static let AUTHORITY = "https://login.microsoftonline.com/tfp/devwegme.onmicrosoft.com/B2C_1_signupin"
+    
     /* UserDefaults KEYS */
     static let AUTH_PREFERENCES = "auth_preferences"
     static let ID_TOKEN_KEY = "msal.idtoken"

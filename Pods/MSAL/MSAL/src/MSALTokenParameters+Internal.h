@@ -1,3 +1,5 @@
+//------------------------------------------------------------------------------
+//
 // Copyright (c) Microsoft Corporation.
 // All rights reserved.
 //
@@ -15,33 +17,29 @@
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+//
+//------------------------------------------------------------------------------
 
-#import <Foundation/Foundation.h>
+#import "MSALTokenParameters.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MSIDClientCapabilitiesUtil : NSObject
+@interface MSALTokenParameters ()
 
-/*
- Takes a list of capabilities and returns the JSON claims.
- The result JSON is not URL encoded and caller needs to encode it if necessary
+/*!
+ Initialize a MSALTokenParameters with scopes.
+ 
+ @param scopes  Permissions you want included in the access token received
+ in the result in the completionBlock. Not all scopes are
+ gauranteed to be included in the access token returned.
  */
-+ (nullable NSString *)msidClaimsParameterFromCapabilities:(NSArray<NSString *> *)capabilities;
-
-/*
- Takes a list of capabilities and returns the JSON claims, combining them with any claims passed by developer.
- The result JSON is not URL encoded and caller needs to encode it if necessary
- */
-
-+ (nullable NSString *)msidClaimsParameterFromCapabilities:(NSArray<NSString *> *)capabilities
-                                           developerClaims:(NSDictionary *)developerClaims;
-
-+ (nullable NSString *)jsonFromClaims:(NSDictionary *)claims;
+- (instancetype)initWithScopes:(NSArray<NSString *> *)scopes NS_DESIGNATED_INITIALIZER;
 
 @end
 

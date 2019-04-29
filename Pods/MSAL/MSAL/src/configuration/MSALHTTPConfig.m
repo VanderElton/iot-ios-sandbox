@@ -25,13 +25,36 @@
 //
 //------------------------------------------------------------------------------
 
-#ifndef MSALUIBehavior_Internal_h
-#define MSALUIBehavior_Internal_h
+#import "MSALHTTPConfig+Internal.h"
+#import "MSIDURLSessionManager.h"
+#import "MSIDHttpRequest.h"
 
-#import "MSIDConstants.h"
+@implementation MSALHTTPConfig
 
-extern NSString *MSALStringForMSALUIBehavior(MSALUIBehavior behavior);
-extern MSIDPromptType MSIDPromptTypeForBehavior(MSALUIBehavior behavior);
-extern NSString *MSALParameterStringForBehavior(MSALUIBehavior behavior);
++ (instancetype)sharedInstance
+{
+    static MSALHTTPConfig *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self.class alloc] init];
+    });
+    
+    return sharedInstance;
+}
 
-#endif /* MSALUIBehavior_Internal_h */
+
+- (NSInteger)retryCount { return MSIDHttpRequest.retryCountSetting; }
+- (void)setRetryCount:(NSInteger)retryCount { MSIDHttpRequest.retryCountSetting = retryCount; }
+
+- (NSTimeInterval)retryInterval { return MSIDHttpRequest.retryIntervalSetting; }
+- (void)setRetryInterval:(NSTimeInterval)retryInterval { MSIDHttpRequest.retryIntervalSetting = retryInterval; }
+
+- (NSTimeInterval)timeoutIntervalForRequest {
+    return MSIDHttpRequest.requestTimeoutInterval;
+}
+- (void)setTimeoutIntervalForRequest:(NSTimeInterval)timeoutIntervalForRequest
+{
+    MSIDHttpRequest.requestTimeoutInterval = timeoutIntervalForRequest;
+}
+
+@end

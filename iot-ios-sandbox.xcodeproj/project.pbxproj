@@ -17,6 +17,8 @@
 		728BFD3022731E470047FA83 /* iot_ios_sandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD2F22731E470047FA83 /* iot_ios_sandboxTests.swift */; };
 		728BFD3B22731E470047FA83 /* iot_ios_sandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD3A22731E470047FA83 /* iot_ios_sandboxUITests.swift */; };
 		728BFD4B22731E910047FA83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD4A22731E910047FA83 /* Constants.swift */; };
+		72B389E7227749DD0011F603 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B389E6227749DD0011F603 /* Plants.swift */; };
+		72B389E9227757600011F603 /* PlantsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B389E8227757600011F603 /* PlantsMapper.swift */; };
 		EEDB4923930C9BB86B43B7D6 /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA7D34E92DD3865135D6416 /* Pods_iot_ios_sandbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		728BFD3C22731E470047FA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728BFD4A22731E910047FA83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iot-ios-sandbox.entitlements"; sourceTree = "<group>"; };
+		72B389E6227749DD0011F603 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
+		72B389E8227757600011F603 /* PlantsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsMapper.swift; sourceTree = "<group>"; };
 		77207E8E1148FA66AD4744A5 /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		910DA166920898D59E7AC6BA /* Pods-iot-ios-sandboxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B65A2D79F7996E7236D31320 /* Pods-iot-ios-sandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 		728BFD1922731E460047FA83 /* iot-ios-sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				72B389E5227749C00011F603 /* model */,
+				72B389E02277470C0011F603 /* api */,
 				728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */,
 				728BFD4922731E5A0047FA83 /* auth */,
 				728BFD4822731E500047FA83 /* helper */,
@@ -161,6 +167,22 @@
 			children = (
 			);
 			path = auth;
+			sourceTree = "<group>";
+		};
+		72B389E02277470C0011F603 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		72B389E5227749C00011F603 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				72B389E6227749DD0011F603 /* Plants.swift */,
+				72B389E8227757600011F603 /* PlantsMapper.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		ADE496C187BE5BC5A12BAF47 /* Frameworks */ = {
@@ -355,6 +377,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -362,6 +385,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSAL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B389E7227749DD0011F603 /* Plants.swift in Sources */,
 				728BFD1D22731E460047FA83 /* ViewController.swift in Sources */,
+				72B389E9227757600011F603 /* PlantsMapper.swift in Sources */,
 				728BFD1B22731E460047FA83 /* AppDelegate.swift in Sources */,
 				728BFD4B22731E910047FA83 /* Constants.swift in Sources */,
 			);

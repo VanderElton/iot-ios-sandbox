@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        MSALLogger.shared().setCallback { (logLevel, message, containsPII) in
+        MSALGlobalConfig.loggerConfig.setLogCallback { (logLevel, message, containsPII) in
             if(!containsPII){
                 print("%@",message!)
             }
@@ -50,10 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if MSALPublicClientApplication.handleMSALResponse(url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String) == true {
-            print("Received callback!")
+        guard let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String else {
+            return false
         }
-        return true
+        return MSALPublicClientApplication.handleMSALResponse(url, sourceApplication: sourceApplication)
     }
 }
 

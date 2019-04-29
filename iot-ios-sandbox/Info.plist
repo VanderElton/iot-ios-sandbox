@@ -27,6 +27,7 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>auth</string>
 				<string>msal57e0c229-158f-4052-bd17-f757a5189da2</string>
 			</array>
 		</dict>

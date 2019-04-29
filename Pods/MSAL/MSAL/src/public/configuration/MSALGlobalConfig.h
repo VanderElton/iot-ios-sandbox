@@ -26,40 +26,41 @@
 //------------------------------------------------------------------------------
 
 #import <Foundation/Foundation.h>
-#import "MSIDConstants.h"
 
-NSString *MSALStringForMSALUIBehavior(MSALUIBehavior behavior)
-{
-    switch (behavior)
-    {
-            STRING_CASE(MSALSelectAccount);
-            STRING_CASE(MSALForceLogin);
-            STRING_CASE(MSALForceConsent);
-            STRING_CASE(MSALPromptIfNecessary);
-    }
-    
-    @throw @"Unrecognized MSALUIBehavior";
-}
+NS_ASSUME_NONNULL_BEGIN
 
-MSIDPromptType MSIDPromptTypeForBehavior(MSALUIBehavior behavior)
-{
-    switch (behavior)
-    {
-        case MSALForceLogin : return MSIDPromptTypeLogin;
-        case MSALForceConsent : return MSIDPromptTypeConsent;
-        case MSALSelectAccount : return MSIDPromptTypeSelectAccount;
-        case MSALPromptIfNecessary : return MSIDPromptTypePromptIfNecessary;
-        default : return MSIDPromptTypeDefault;
-    }
-}
+@class MSALHTTPConfig;
+@class MSALTelemetryConfig;
+@class MSALLoggerConfig;
+@class MSALCacheConfig;
 
-NSString *MSALParameterStringForBehavior(MSALUIBehavior behavior)
-{
-    switch (behavior)
-    {
-        case MSALForceLogin : return @"login";
-        case MSALForceConsent : return @"consent";
-        case MSALSelectAccount : return @"select_account";
-        case MSALPromptIfNecessary : return @"";
-    }
-}
+@interface MSALGlobalConfig : NSObject
+
+/*! Network configuration, refer to MSALHTTPConfig.h for more detail */
+@property (class, readonly) MSALHTTPConfig *httpConfig;
+/*! Telemetry configurations, refer to MSALTelemetryConfig.h for more detail */
+@property (class, readonly) MSALTelemetryConfig *telemetryConfig;
+/*! Logger configurations, refer to MSALLoggerConfig.h for more detail */
+@property (class, readonly) MSALLoggerConfig *loggerConfig;
+
+/*! The webview selection to be used for authentication.
+ By default, it is going to use the following to authenticate.
+ - iOS: SFAuthenticationSession for iOS11 and up, SFSafariViewController otherwise.
+ - macOS:  WKWebView
+ */
+@property (class) MSALWebviewType defaultWebviewType;
+
+#if TARGET_OS_IPHONE
+/*!
+ Setting to define MSAL behavior regarding broker.
+ Broker is enabled by default.
+ */
+@property (class) MSALBrokeredAvailability brokerAvailability;
+#endif
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
++ (nonnull instancetype)new NS_UNAVAILABLE;
+
+@end
+
+NS_ASSUME_NONNULL_END

@@ -1,3 +1,5 @@
+//------------------------------------------------------------------------------
+//
 // Copyright (c) Microsoft Corporation.
 // All rights reserved.
 //
@@ -15,36 +17,26 @@
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+//
+//------------------------------------------------------------------------------
 
-#import "MSIDNetworkConfiguration.h"
+#import "MSALClaimsRequest.h"
 
-static NSTimeInterval s_timeout = 30;
-static NSInteger s_retryCount = 2;
+@class MSIDClaimsRequest;
+@protocol MSIDJsonSerializing;
 
-@implementation MSIDNetworkConfiguration
+NS_ASSUME_NONNULL_BEGIN
 
-+ (void)setTimeout:(NSTimeInterval)timeout
-{
-    s_timeout = timeout;
-}
-+ (NSTimeInterval)timeout
-{
-    return s_timeout;
-}
+@interface MSALClaimsRequest ()
 
-+(void)setRetryCount:(NSInteger)retryCount
-{
-    s_retryCount = retryCount;
-}
-
-+ (NSInteger)retryCount
-{
-    return s_retryCount;
-}
+@property (nonatomic) MSIDClaimsRequest *msidClaimsRequest;
+@property (nonatomic) id<MSIDJsonSerializing> jsonSerializer;
 
 @end
+
+NS_ASSUME_NONNULL_END

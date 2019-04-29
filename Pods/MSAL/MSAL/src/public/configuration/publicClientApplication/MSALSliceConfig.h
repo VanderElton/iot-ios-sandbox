@@ -1,3 +1,5 @@
+//------------------------------------------------------------------------------
+//
 // Copyright (c) Microsoft Corporation.
 // All rights reserved.
 //
@@ -15,18 +17,32 @@
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+//
+//------------------------------------------------------------------------------
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
-@interface MSIDNetworkConfiguration : NSObject
+@interface MSALSliceConfig : NSObject <NSCopying>
 
-@property (class, nonatomic, readwrite) NSTimeInterval timeout;
-@property (class, nonatomic, readwrite) NSInteger retryCount;
+@property NSString *slice;
+@property NSString *dc;
+
+@property (readonly) NSDictionary *sliceDictionary;
+
+- (nullable instancetype)initWithSlice:(nullable NSString *)slice dc:(nullable NSString *)dc NS_DESIGNATED_INITIALIZER;
+
++ (nullable instancetype)configWithSlice:(nullable NSString *)slice dc:(nullable NSString *)dc;
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
++ (nonnull instancetype)new NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END
