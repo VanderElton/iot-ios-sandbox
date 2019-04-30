@@ -2,9 +2,10 @@
 # platform :ios, '9.0'
 
 target 'iot-ios-sandbox' do
-  pod 'MSAL','~>0.2'
-  pod 'Alamofire','~>4.7'
-  pod 'SwiftyJSON','~>4.0'
+  pod 'MSAL'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'SwiftKeychainWrapper'
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 

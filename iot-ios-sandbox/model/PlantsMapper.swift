@@ -8,10 +8,11 @@
 
 import Foundation
 
-class MovieMapper {
+class PlantsMapper {
     
     func toObject(_ object: Dictionary<String, Any>) -> Plants{
         let plant = Plants(name: object["name"] as! String, description: object["description"] as! String)
+        
         return plant
     }
     
@@ -20,6 +21,7 @@ class MovieMapper {
         for plant in array {
             plants.append(self.toObject(plant))
         }
+        
         return plants
     }
     

@@ -17,6 +17,12 @@
 		728BFD3022731E470047FA83 /* iot_ios_sandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD2F22731E470047FA83 /* iot_ios_sandboxTests.swift */; };
 		728BFD3B22731E470047FA83 /* iot_ios_sandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD3A22731E470047FA83 /* iot_ios_sandboxUITests.swift */; };
 		728BFD4B22731E910047FA83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728BFD4A22731E910047FA83 /* Constants.swift */; };
+		72A6AF64227862B800106690 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF63227862B800106690 /* APIRouter.swift */; };
+		72A6AF7122788EDA00106690 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF7022788EDA00106690 /* PlantsViewController.swift */; };
+		72A6AF732278904F00106690 /* PlantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF722278904F00106690 /* PlantViewCell.swift */; };
+		72A6AF77227899BD00106690 /* PlantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF76227899BD00106690 /* PlantsAPI.swift */; };
+		72A6AF7C2278B57100106690 /* TokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF7B2278B57100106690 /* TokenAdapter.swift */; };
+		72A6AF7E2278CF5000106690 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A6AF7D2278CF5000106690 /* Pagination.swift */; };
 		72B389E7227749DD0011F603 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B389E6227749DD0011F603 /* Plants.swift */; };
 		72B389E9227757600011F603 /* PlantsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B389E8227757600011F603 /* PlantsMapper.swift */; };
 		EEDB4923930C9BB86B43B7D6 /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA7D34E92DD3865135D6416 /* Pods_iot_ios_sandbox.framework */; };
@@ -60,6 +66,12 @@
 		728BFD3C22731E470047FA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		728BFD4A22731E910047FA83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iot-ios-sandbox.entitlements"; sourceTree = "<group>"; };
+		72A6AF63227862B800106690 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		72A6AF7022788EDA00106690 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		72A6AF722278904F00106690 /* PlantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewCell.swift; sourceTree = "<group>"; };
+		72A6AF76227899BD00106690 /* PlantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAPI.swift; sourceTree = "<group>"; };
+		72A6AF7B2278B57100106690 /* TokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAdapter.swift; sourceTree = "<group>"; };
+		72A6AF7D2278CF5000106690 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		72B389E6227749DD0011F603 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
 		72B389E8227757600011F603 /* PlantsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsMapper.swift; sourceTree = "<group>"; };
 		77207E8E1148FA66AD4744A5 /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,9 +133,10 @@
 		728BFD1922731E460047FA83 /* iot-ios-sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */,
+				72A6AF6F22788E3900106690 /* controllers */,
 				72B389E5227749C00011F603 /* model */,
 				72B389E02277470C0011F603 /* api */,
-				728BFD4C2273476B0047FA83 /* iot-ios-sandbox.entitlements */,
 				728BFD4922731E5A0047FA83 /* auth */,
 				728BFD4822731E500047FA83 /* helper */,
 				728BFD1A22731E460047FA83 /* AppDelegate.swift */,
@@ -169,9 +182,21 @@
 			path = auth;
 			sourceTree = "<group>";
 		};
+		72A6AF6F22788E3900106690 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72A6AF7022788EDA00106690 /* PlantsViewController.swift */,
+				72A6AF722278904F00106690 /* PlantViewCell.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		72B389E02277470C0011F603 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				72A6AF76227899BD00106690 /* PlantsAPI.swift */,
+				72A6AF63227862B800106690 /* APIRouter.swift */,
+				72A6AF7B2278B57100106690 /* TokenAdapter.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -181,6 +206,7 @@
 			children = (
 				72B389E6227749DD0011F603 /* Plants.swift */,
 				72B389E8227757600011F603 /* PlantsMapper.swift */,
+				72A6AF7D2278CF5000106690 /* Pagination.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -377,6 +403,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -385,6 +412,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSAL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +471,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A6AF7C2278B57100106690 /* TokenAdapter.swift in Sources */,
+				72A6AF732278904F00106690 /* PlantViewCell.swift in Sources */,
+				72A6AF7122788EDA00106690 /* PlantsViewController.swift in Sources */,
 				72B389E7227749DD0011F603 /* Plants.swift in Sources */,
+				72A6AF77227899BD00106690 /* PlantsAPI.swift in Sources */,
+				72A6AF64227862B800106690 /* APIRouter.swift in Sources */,
 				728BFD1D22731E460047FA83 /* ViewController.swift in Sources */,
+				72A6AF7E2278CF5000106690 /* Pagination.swift in Sources */,
 				72B389E9227757600011F603 /* PlantsMapper.swift in Sources */,
 				728BFD1B22731E460047FA83 /* AppDelegate.swift in Sources */,
 				728BFD4B22731E910047FA83 /* Constants.swift in Sources */,

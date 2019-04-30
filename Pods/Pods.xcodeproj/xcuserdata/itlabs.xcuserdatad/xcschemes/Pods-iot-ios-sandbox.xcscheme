@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E9F0132B6BAB45C0DABF998CA35B028"
+               BlueprintIdentifier = "95BD1D4F381E93BE85CD73C4BAC5C270"
                BuildableName = "Pods_iot_ios_sandbox.framework"
                BlueprintName = "Pods-iot-ios-sandbox"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E9F0132B6BAB45C0DABF998CA35B028"
+            BlueprintIdentifier = "95BD1D4F381E93BE85CD73C4BAC5C270"
             BuildableName = "Pods_iot_ios_sandbox.framework"
             BlueprintName = "Pods-iot-ios-sandbox"
             ReferencedContainer = "container:Pods.xcodeproj">
