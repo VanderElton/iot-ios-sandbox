@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95BD1D4F381E93BE85CD73C4BAC5C270"
+               BlueprintIdentifier = "DBA165F16972FBA1F8EF21739C1DFF69"
                BuildableName = "Pods_iot_ios_sandbox.framework"
                BlueprintName = "Pods-iot-ios-sandbox"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95BD1D4F381E93BE85CD73C4BAC5C270"
+            BlueprintIdentifier = "DBA165F16972FBA1F8EF21739C1DFF69"
             BuildableName = "Pods_iot_ios_sandbox.framework"
             BlueprintName = "Pods-iot-ios-sandbox"
             ReferencedContainer = "container:Pods.xcodeproj">

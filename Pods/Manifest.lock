@@ -1,30 +1,26 @@
 PODS:
   - Alamofire (4.8.2)
-  - MSAL (0.4.0):
-    - MSAL/app-lib (= 0.4.0)
-  - MSAL/app-lib (0.4.0)
+  - MSAL (0.4.1):
+    - MSAL/app-lib (= 0.4.1)
+  - MSAL/app-lib (0.4.1)
   - SwiftKeychainWrapper (3.2.0)
-  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
   - MSAL
   - SwiftKeychainWrapper
-  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - MSAL
     - SwiftKeychainWrapper
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  MSAL: fb209227bd464771648206286eb2bcca46f438ec
+  MSAL: 1f65b7b3b5dcb041a66f29055adeb3016ff352de
   SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
-  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: e1478b4dbb9dc5c9bdabbc832e7e1d85e14ef708
+PODFILE CHECKSUM: 04fee7a306542bac2bda3fb9fd794dc05c2410e3
 
 COCOAPODS: 1.6.1

@@ -17,9 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        MSALGlobalConfig.loggerConfig.setLogCallback { (logLevel, message, containsPII) in
-            if(!containsPII){
-                print("%@",message!)
+        MSALGlobalConfig.loggerConfig.setLogCallback { (level: MSALLogLevel , message: String?, containsPII: Bool) in
+            if let displayableMessage = message{
+                if(!containsPII){
+                    print(displayableMessage)
+                }
             }
             
         }
