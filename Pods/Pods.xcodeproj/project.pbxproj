@@ -800,7 +800,7 @@
 		3C162BC3A41FFA3E8B1C172037D4360E /* MSIDOpenIdProviderMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDOpenIdProviderMetadata.h; path = MSAL/IdentityCore/IdentityCore/src/validation/MSIDOpenIdProviderMetadata.h; sourceTree = "<group>"; };
 		3C43A0903C117C6C3232A878A4344A1A /* MSIDAADV2TokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADV2TokenResponse.m; path = MSAL/IdentityCore/IdentityCore/src/oauth2/aad_v2/MSIDAADV2TokenResponse.m; sourceTree = "<group>"; };
 		3DB6243A9366E47659D91B6015F2EB12 /* MSIDHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDHttpRequest.h; path = MSAL/IdentityCore/IdentityCore/src/network/MSIDHttpRequest.h; sourceTree = "<group>"; };
-		3E6D650FB97284E77DDDE45884BCC51C /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6D650FB97284E77DDDE45884BCC51C /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81E1AD3A708E3C76AEB61DD750757D /* MSIDAADOAuthEmbeddedWebviewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADOAuthEmbeddedWebviewController.m; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/MSIDAADOAuthEmbeddedWebviewController.m; sourceTree = "<group>"; };
 		3ED2133C9B34A23A1ECB414AAA0EAD6E /* MSIDKeychainTokenCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDKeychainTokenCache.h; path = MSAL/IdentityCore/IdentityCore/src/cache/ios/MSIDKeychainTokenCache.h; sourceTree = "<group>"; };
 		401EE6850CF892A24E6E107553D8F088 /* MSIDOAuth2EmbeddedWebviewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDOAuth2EmbeddedWebviewController.h; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/MSIDOAuth2EmbeddedWebviewController.h; sourceTree = "<group>"; };
@@ -824,8 +824,8 @@
 		497C53C148F54AC11F32307770356C9F /* MSIDWebviewUIController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDWebviewUIController.m; path = MSAL/IdentityCore/IdentityCore/src/webview/embeddedWebview/ui/ios/MSIDWebviewUIController.m; sourceTree = "<group>"; };
 		498D882B2909ED3D8D1F5531BEAC93CE /* MSIDTokenFilteringHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDTokenFilteringHelper.m; path = MSAL/IdentityCore/IdentityCore/src/cache/accessor/MSIDTokenFilteringHelper.m; sourceTree = "<group>"; };
 		49E81B90F7E5C507D4F6CF3076753E13 /* MSIDTelemetryAuthorityValidationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDTelemetryAuthorityValidationEvent.h; path = MSAL/IdentityCore/IdentityCore/src/telemetry/MSIDTelemetryAuthorityValidationEvent.h; sourceTree = "<group>"; };
-		49FEC54A5FEF2AF3206A26655757AF00 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iot_ios_sandboxTests.framework; path = "Pods-iot-ios-sandboxTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4ADB6E4136607DF278E7AECAAF9CEC36 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FEC54A5FEF2AF3206A26655757AF00 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ADB6E4136607DF278E7AECAAF9CEC36 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B034036DAB8E3CAC156A4EC6F120597 /* MSALGlobalConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALGlobalConfig.h; path = MSAL/src/public/configuration/MSALGlobalConfig.h; sourceTree = "<group>"; };
 		4B167B904F4A9300EB6F9943BB322D9D /* MSALSliceConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALSliceConfig.h; path = MSAL/src/public/configuration/publicClientApplication/MSALSliceConfig.h; sourceTree = "<group>"; };
 		4B56DF87FD26F93ABC8B98F9AF79857F /* NSDate+MSIDExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MSIDExtensions.m"; path = "MSAL/IdentityCore/IdentityCore/src/util/NSDate+MSIDExtensions.m"; sourceTree = "<group>"; };
@@ -888,7 +888,7 @@
 		605FB9748D27B272E426F5AF6492F2A9 /* MSIDConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDConstants.m; path = MSAL/IdentityCore/IdentityCore/src/MSIDConstants.m; sourceTree = "<group>"; };
 		6138B685E8F7EB3D7D8BC4A3F316E838 /* Pods-iot-ios-sandboxUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iot-ios-sandboxUITests-umbrella.h"; sourceTree = "<group>"; };
 		6142C19BE35A5B857A705C4A07B4C81A /* MSIDAadAuthorityCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAadAuthorityCache.m; path = MSAL/IdentityCore/IdentityCore/src/validation/MSIDAadAuthorityCache.m; sourceTree = "<group>"; };
-		61571C0280D099D7BFB28FFE5A50C01B /* MSAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSAL.framework; path = MSAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61571C0280D099D7BFB28FFE5A50C01B /* MSAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61676759211EBF132483F6B99E6C64CD /* Pods-iot-ios-sandboxTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iot-ios-sandboxTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		629F3906DD4D877219E7723FF4C48094 /* MSIDAADEndpointProviding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADEndpointProviding.h; path = MSAL/IdentityCore/IdentityCore/src/network/MSIDAADEndpointProviding.h; sourceTree = "<group>"; };
 		62A7640C4A5A6621EDEB0BE03935AA2E /* MSIDDefaultBrokerTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDDefaultBrokerTokenRequest.m; path = MSAL/IdentityCore/IdentityCore/src/requests/sdk/msal/MSIDDefaultBrokerTokenRequest.m; sourceTree = "<group>"; };
@@ -1029,7 +1029,7 @@
 		9C3DF70236B79A4A75985035E3DD95A0 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		9D2328849FE7432C1DF2AFEAFB4A7361 /* MSIDDRSDiscoveryResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDDRSDiscoveryResponseSerializer.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDDRSDiscoveryResponseSerializer.m; sourceTree = "<group>"; };
 		9D7E0FCD5422DADAA607585DA603A57E /* MSALGlobalConfig+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSALGlobalConfig+Internal.h"; path = "MSAL/src/configuration/MSALGlobalConfig+Internal.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCBD9589535A114D35F7E85882402F7 /* MSALIndividualClaimRequestAdditionalInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALIndividualClaimRequestAdditionalInfo.m; path = MSAL/src/MSALIndividualClaimRequestAdditionalInfo.m; sourceTree = "<group>"; };
 		9ECFC3A93B975BB8E99393725A164C65 /* MSALRedirectUriVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSALRedirectUriVerifier.m; path = MSAL/src/util/ios/MSALRedirectUriVerifier.m; sourceTree = "<group>"; };
 		9ED41B5708F8DBA0936B37610CEB4384 /* MSIDAuthorizationCodeGrantRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAuthorizationCodeGrantRequest.m; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAuthorizationCodeGrantRequest.m; sourceTree = "<group>"; };
@@ -1089,7 +1089,7 @@
 		B935F6845B81AE9FE1A35FEBB491D5B6 /* MSALDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSALDefinitions.h; path = MSAL/src/public/MSALDefinitions.h; sourceTree = "<group>"; };
 		B975013A2043167B31E5455096F4C4DE /* MSIDIntuneEnrollmentIdsCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDIntuneEnrollmentIdsCache.h; path = MSAL/IdentityCore/IdentityCore/src/intune/MSIDIntuneEnrollmentIdsCache.h; sourceTree = "<group>"; };
 		B9BAE7444DF9C5B52CFF6B94570773A6 /* MSIDIndividualClaimRequestAdditionalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDIndividualClaimRequestAdditionalInfo.h; path = MSAL/IdentityCore/IdentityCore/src/claims/MSIDIndividualClaimRequestAdditionalInfo.h; sourceTree = "<group>"; };
-		BA17E71436E7DE812ED3687D6CD09FA7 /* Pods_iot_ios_sandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iot_ios_sandbox.framework; path = "Pods-iot-ios-sandbox.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA17E71436E7DE812ED3687D6CD09FA7 /* Pods_iot_ios_sandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA27BD7FEB72A1F3BECB9DE46550C6E5 /* MSIDAADAuthorityValidationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADAuthorityValidationRequest.h; path = MSAL/IdentityCore/IdentityCore/src/network/request/MSIDAADAuthorityValidationRequest.h; sourceTree = "<group>"; };
 		BA307C68E3DAD8FF9C54544666C82D06 /* MSIDAADV2IdTokenClaims.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAADV2IdTokenClaims.m; path = MSAL/IdentityCore/IdentityCore/src/oauth2/aad_v2/MSIDAADV2IdTokenClaims.m; sourceTree = "<group>"; };
 		BB116C762B6E26D036557B6A85AF7A14 /* MSALCacheConfig+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSALCacheConfig+Internal.h"; path = "MSAL/src/configuration/MSALCacheConfig+Internal.h"; sourceTree = "<group>"; };
@@ -1203,7 +1203,7 @@
 		E8C7ED9FB65C0D52DA2AF61F49ABC168 /* MSIDAADRequestErrorHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADRequestErrorHandler.h; path = MSAL/IdentityCore/IdentityCore/src/network/error_handler/MSIDAADRequestErrorHandler.h; sourceTree = "<group>"; };
 		E8D6156C6D9C2E6C62E2F238C960DB41 /* MSIDPkeyAuthHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDPkeyAuthHelper.h; path = MSAL/IdentityCore/IdentityCore/src/workplacejoin/MSIDPkeyAuthHelper.h; sourceTree = "<group>"; };
 		E904F948A5CA7561876C1577E21D8528 /* MSAL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAL-prefix.pch"; sourceTree = "<group>"; };
-		EAAF91A6CAB2E7584B575C6131789FDA /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iot_ios_sandboxUITests.framework; path = "Pods-iot-ios-sandboxUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAF91A6CAB2E7584B575C6131789FDA /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC2B565933602A01552C42ECF0D9E17 /* MSIDAADV2TokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDAADV2TokenResponse.h; path = MSAL/IdentityCore/IdentityCore/src/oauth2/aad_v2/MSIDAADV2TokenResponse.h; sourceTree = "<group>"; };
 		EB1CC0F58C5367E5D646A002934B9E99 /* MSIDAppMetadataCacheItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSIDAppMetadataCacheItem.m; path = MSAL/IdentityCore/IdentityCore/src/cache/token/MSIDAppMetadataCacheItem.m; sourceTree = "<group>"; };
 		EB9FBC7E69836CA38DA1ACA4448B08E1 /* MSIDBrokerTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSIDBrokerTokenRequest.h; path = MSAL/IdentityCore/IdentityCore/src/requests/MSIDBrokerTokenRequest.h; sourceTree = "<group>"; };
@@ -1444,7 +1444,6 @@
 				9C3DF70236B79A4A75985035E3DD95A0 /* Validation.swift */,
 				CCEB18F36579F97DA03CF6AD29AC5459 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1456,7 +1455,6 @@
 				076E9B490D616D268394D66E6A58647B /* SwiftKeychainWrapper.h */,
 				3517E7D42263A28716E0FA6F166762B2 /* Support Files */,
 			);
-			name = SwiftKeychainWrapper;
 			path = SwiftKeychainWrapper;
 			sourceTree = "<group>";
 		};
@@ -2040,7 +2038,6 @@
 				9B9A3FC4964DEF4465B5BA90FA053C18 /* app-lib */,
 				831EB608C8F29750A361B681CA19AC7F /* Support Files */,
 			);
-			name = MSAL;
 			path = MSAL;
 			sourceTree = "<group>";
 		};
@@ -2578,13 +2575,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -3227,6 +3225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -3434,6 +3433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

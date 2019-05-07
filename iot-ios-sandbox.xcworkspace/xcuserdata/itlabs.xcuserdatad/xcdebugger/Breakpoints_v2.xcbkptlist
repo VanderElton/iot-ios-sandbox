@@ -9,119 +9,103 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.308934"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.7136919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "PlantsAPI"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.714251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getPlants(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/controllers/PlantsViewController.swift"
-            timestampString = "578604617.309086"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.714637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getPlants(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/controllers/PlantsViewController.swift"
-            timestampString = "578604617.309166"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.715059"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "viewWillAppear(_:)"
+            landmarkName = "getPlants(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iot_ios_sandbox.PlantsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "iot-ios-sandbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/controllers/PlantsViewController.swift"
-                  timestampString = "578604617.611107"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;iot_ios_sandbox.Plants&gt;) -&gt; () in iot_ios_sandbox.PlantsViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "iot-ios-sandbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/controllers/PlantsViewController.swift"
-                  timestampString = "578604617.615096"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "83">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342435.581167"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.715444"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "getPlants(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "iot_ios_sandbox.PlantsAPI.getPlants(completion: (Swift.Array&lt;iot_ios_sandbox.Plants&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "iot_ios_sandbox.PlantsAPI.getPlants(completion: (Swift.Array&lt;iot_ios_sandbox.Plant&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "iot-ios-sandbox"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/api/PlantsAPI.swift"
-                  timestampString = "578604617.635511"
+                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/plant/api/PlantsAPI.swift"
+                  timestampString = "578848073.681844"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
                   endingLineNumber = "23"
-                  offsetFromSymbolStart = "653">
+                  offsetFromSymbolStart = "879">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in iot_ios_sandbox.PlantsAPI.getPlants(completion: (Swift.Array&lt;iot_ios_sandbox.Plants&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in iot_ios_sandbox.PlantsAPI.getPlants(completion: (Swift.Array&lt;iot_ios_sandbox.Plant&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "iot-ios-sandbox"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/api/PlantsAPI.swift"
-                  timestampString = "578604617.6380579"
+                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/plant/api/PlantsAPI.swift"
+                  timestampString = "578848073.685822"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -134,15 +118,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342435.583065"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.715825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "getPlants(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -150,59 +134,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342435.5844949"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "getPlants(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342435.584915"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "getPlants(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342459.0626529"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getPlants(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/api/PlantsAPI.swift"
-            timestampString = "578342461.926643"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.716233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -217,13 +153,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.309342"
+            filePath = "iot-ios-sandbox/plant/api/HeaderAdapter.swift"
+            timestampString = "578862497.340398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "actionAcessButton(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "adapt(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -233,109 +169,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.309432"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.71665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "actionAcessButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.309513"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "actionAcessButton(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iot_ios_sandbox.ViewController.actionAcessButton(__C.UIButton) -&gt; ()"
-                  moduleName = "iot-ios-sandbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/ViewController.swift"
-                  timestampString = "578603143.88688"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "1468">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.MSALResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in iot_ios_sandbox.ViewController.actionAcessButton(__C.UIButton) -&gt; ()"
-                  moduleName = "iot-ios-sandbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox/iot-ios-sandbox/ViewController.swift"
-                  timestampString = "578603143.890246"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "272">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.309595"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "actionAcessButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.3096679"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "actionAcessButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.309739"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "actionAcessButton(_:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getPlants(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -345,14 +185,206 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iot-ios-sandbox/ViewController.swift"
-            timestampString = "578604617.3098069"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.717048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "actionAcessButton(_:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getPlants(completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.717454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getPlants(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/api/PlantsAPI.swift"
+            timestampString = "578946517.717886"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getPlants(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/controllers/PlantViewController.swift"
+            timestampString = "578944951.882738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/model/PlantMapper.swift"
+            timestampString = "578944951.882818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "toArray(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/model/PlantMapper.swift"
+            timestampString = "578944951.882887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "toArray(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/model/PlantMapper.swift"
+            timestampString = "578944951.882952"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "toObject(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/model/PlantMapper.swift"
+            timestampString = "578944951.883016"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "toObject(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/model/PlantMapper.swift"
+            timestampString = "578944951.883077"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "toArray(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/auth/AuthViewController.swift"
+            timestampString = "578946517.718563"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "acquireTokenInteractive(forScopes:client:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iot-ios-sandbox/plant/controllers/PlantViewController.swift"
+            timestampString = "578944951.883207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iot_ios_sandbox.PlantViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "iot-ios-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox2/iot-ios-sandbox/plant/controllers/PlantViewController.swift"
+                  timestampString = "578946644.308182"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;iot_ios_sandbox.Plant&gt;) -&gt; () in iot_ios_sandbox.PlantViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "iot-ios-sandbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/itlabs/Documents/ios/iot-ios-sandbox2/iot-ios-sandbox/plant/controllers/PlantViewController.swift"
+                  timestampString = "578946644.311031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

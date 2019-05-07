@@ -1,14 +1,14 @@
 //
-//  Plants.swift
+//  Plant.swift
 //  iot-ios-sandbox
 //
-//  Created by ITLABS WEG on 29/04/19.
+//  Created by ITLABS WEG on 06/05/19.
 //  Copyright © 2019 WEG. All rights reserved.
 //
 
 import Foundation
 
-class Plants {
+class Plant {
     let name: String?
     let description: String?
     

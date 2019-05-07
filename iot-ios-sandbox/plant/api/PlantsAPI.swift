@@ -2,7 +2,7 @@
 //  PlantsAPI.swift
 //  iot-ios-sandbox
 //
-//  Created by ITLABS WEG on 30/04/19.
+//  Created by ITLABS WEG on 06/05/19.
 //  Copyright © 2019 WEG. All rights reserved.
 //
 
@@ -12,20 +12,22 @@ import SwiftKeychainWrapper
 
 class PlantsAPI {
     
-    var urlRequest = URLRequest(url: URL(string: "https://iot-api-dev.weg.net")!)
-    
     let sessionManager = Alamofire.SessionManager()
     
-    func getPlants(completion: @escaping(_ plants: Array<Plants>) -> Void) {
+    func getPlants(completion: @escaping(_ plants: Array<Plant>) -> Void) {
         
-        sessionManager.adapter = TokenAdapter(idToken: KeychainWrapper.standard.string(forKey: Constants.AUTH_PREFERENCES)!)
+        sessionManager.adapter = HeaderAdapter(idToken: KeychainWrapper.standard.string(forKey: Constants.ID_TOKEN_KEY)!)
         
-        Alamofire.request("https://iot-api-dev.weg.net/plants").validate().responseJSON { response in
+        let token = "Bearer " + KeychainWrapper.standard.string(forKey: Constants.ID_TOKEN_KEY)!
+        
+        let head: HTTPHeaders = ["Authorization": token]
+        
+        Alamofire.request("https://iot-api-dev.weg.net/api/plants", headers: head).validate().responseJSON { response in
             switch response.result {
             case .success:
-                if let resp = response.result.value as? Dictionary<String, Any> {
-                    guard let json = resp["results"] as? Array<Dictionary<String, Any>> else {return}
-                    let plants = PlantsMapper().toArray(json)
+                if let value = response.result.value as? Dictionary<String, Any> {
+                    guard let json = value["value"] as? Array<Dictionary<String,Any>> else {return}
+                    let plants = PlantMapper().toArray(json)
                     completion(plants)
                 }
                 break
@@ -38,14 +40,14 @@ class PlantsAPI {
         }
     }
     
-    func getPlantById(id: Int, completation: @escaping(_ plant: Plants) -> Void) {
+    func getPlantById(id: Int, completation: @escaping(_ plant: Plant) -> Void) {
         sessionManager.request("").responseJSON { reponse in
             switch reponse.result {
             case .success:
                 if let resp = reponse.result.value as? Dictionary<String, Any> {
-                    let plant = PlantsMapper().toObject(resp)
+                    let plant = PlantMapper().toObject(resp)
                     completation(plant)
-            }
+                }
                 break
             case .failure:
                 print(reponse.error!)
