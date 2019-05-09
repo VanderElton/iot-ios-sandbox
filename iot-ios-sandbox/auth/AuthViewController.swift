@@ -14,6 +14,8 @@ class AuthViewController: UIViewController, URLSessionDelegate {
     
     var client : MSALPublicClientApplication?
     
+    var isSeguePending: Bool = false
+    
     var token = String()
     @IBOutlet weak var acessButton: UIButton!
     
@@ -21,6 +23,14 @@ class AuthViewController: UIViewController, URLSessionDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if self.isSeguePending {
+            self.isSeguePending = false
+            self.performSegue(withIdentifier: "SeguePlantsStoryboard", sender: self)
+        }
     }
     
     //Mark: Actions
@@ -60,7 +70,7 @@ class AuthViewController: UIViewController, URLSessionDelegate {
             }
             self.token = acquireResult.idToken!
             let _: Bool = KeychainWrapper.standard.set(self.token, forKey: Constants.ID_TOKEN_KEY)
-            self.performSegue(withIdentifier: "SeguePlantsStoryboard", sender: self)
+            self.isSeguePending = true
         }
     }
 
