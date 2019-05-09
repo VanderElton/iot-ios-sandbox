@@ -19,5 +19,6 @@ public struct Constants {
     
     /* UserDefaults KEYS */
     static let ID_TOKEN_KEY = "msal.idtoken"
+    static let ACCOUNT_ID = "msal.currentAccountIdentifier"
     
 }

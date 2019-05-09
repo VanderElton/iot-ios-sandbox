@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A7FB0E228462B500B75681 /* wegicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A7FB0D228462B500B75681 /* wegicon.png */; };
+		72A7FB102284683800B75681 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB0F2284683800B75681 /* AppErrors.swift */; };
+		72A7FB1222846A9000B75681 /* MSALAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB1122846A9000B75681 /* MSALAuthentication.swift */; };
 		72ABBCF822806EED0089047F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBCF722806EED0089047F /* AppDelegate.swift */; };
 		72ABBCFD22806EED0089047F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFB22806EED0089047F /* Main.storyboard */; };
 		72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFE22806EEF0089047F /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		1337D121AB698C653D17958A /* Pods-iot-ios-sandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		547BC084B00F76B7237815E5 /* Pods-iot-ios-sandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A7FB0D228462B500B75681 /* wegicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wegicon.png; path = Assets.xcassets/wegicon.png; sourceTree = "<group>"; };
+		72A7FB0F2284683800B75681 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		72A7FB1122846A9000B75681 /* MSALAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthentication.swift; sourceTree = "<group>"; };
 		72ABBCF422806EED0089047F /* iot-ios-sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iot-ios-sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72ABBCF722806EED0089047F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72ABBCFC22806EED0089047F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				72ABBCF722806EED0089047F /* AppDelegate.swift */,
 				72ABBCFB22806EED0089047F /* Main.storyboard */,
 				72ABBCFE22806EEF0089047F /* Assets.xcassets */,
+				72A7FB0D228462B500B75681 /* wegicon.png */,
 				72ABBD0022806EEF0089047F /* LaunchScreen.storyboard */,
 				72ABBD0322806EEF0089047F /* Info.plist */,
 			);
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				72ABBD2B228074D50089047F /* AuthViewController.swift */,
+				72A7FB1122846A9000B75681 /* MSALAuthentication.swift */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				72ABBD2D228076E30089047F /* Constants.swift */,
+				72A7FB0F2284683800B75681 /* AppErrors.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -360,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A7FB0E228462B500B75681 /* wegicon.png in Resources */,
 				72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */,
 				72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */,
 				72ABBD342280778F0089047F /* Plants.storyboard in Resources */,
@@ -483,8 +493,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A7FB1222846A9000B75681 /* MSALAuthentication.swift in Sources */,
 				72ABBD2C228074D50089047F /* AuthViewController.swift in Sources */,
 				72ABBD3C22807B830089047F /* PlantViewCell.swift in Sources */,
+				72A7FB102284683800B75681 /* AppErrors.swift in Sources */,
 				72ABBCF822806EED0089047F /* AppDelegate.swift in Sources */,
 				72ABBD3A22807AB00089047F /* PlantViewController.swift in Sources */,
 				72ABBD4222807C650089047F /* PlantMapper.swift in Sources */,

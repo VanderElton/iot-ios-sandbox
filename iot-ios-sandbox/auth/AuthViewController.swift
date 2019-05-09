@@ -7,16 +7,9 @@
 //
 
 import UIKit
-import MSAL
-import SwiftKeychainWrapper
 
-class AuthViewController: UIViewController, URLSessionDelegate {
+class AuthViewController: UIViewController {
     
-    var client : MSALPublicClientApplication?
-    
-    var isSeguePending: Bool = false
-    
-    var token = String()
     @IBOutlet weak var acessButton: UIButton!
     
     //Mark: Properties
@@ -25,53 +18,17 @@ class AuthViewController: UIViewController, URLSessionDelegate {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if self.isSeguePending {
-            self.isSeguePending = false
-            self.performSegue(withIdentifier: "SeguePlantsStoryboard", sender: self)
-        }
-    }
-    
     //Mark: Actions
     @IBAction func actionAcessButton(_ sender: UIButton) {
-        do {
-            client = try createClient()
-            
-            acquireTokenInteractive(forScopes: Constants.SCOPES, client: client!)
-            
-        }catch{
-            return
-        }
-    }
-    
-    func createClient () throws -> MSALPublicClientApplication {
         
-        let urlStringAuthority = String(format: Constants.ENDPOINT, arguments: [Constants.TENANT,Constants.POLICY])
-        
-        let urlAuthority = URL(string: urlStringAuthority)!
-        
-        let authority = try MSALB2CAuthority(url: urlAuthority)
-        
-        let config = MSALPublicClientApplicationConfig(clientId: Constants.CLIENT_ID, redirectUri: nil, authority: authority)
-        
-        return try MSALPublicClientApplication(configuration: config)
-        
-    }
-    
-    func acquireTokenInteractive (forScopes scopes: [String], client: MSALPublicClientApplication) {
-        
-        let parameters = MSALInteractiveTokenParameters(scopes: Constants.SCOPES)
-        
-        client.acquireToken(with: parameters) { (result: MSALResult?, error: Error?) in
-            
-            guard let acquireResult = result, error == nil else {
+        MSALAuthentication.shared.signInAccount {
+            (account, token, error) in
+            if let error = error {
+                print ("App error: \(error)")
                 return
             }
-            self.token = acquireResult.idToken!
-            let _: Bool = KeychainWrapper.standard.set(self.token, forKey: Constants.ID_TOKEN_KEY)
-            self.isSeguePending = true
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.showMainViewController()
         }
     }
-
 }

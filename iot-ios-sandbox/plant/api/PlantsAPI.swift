@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import SwiftKeychainWrapper
 
 class PlantsAPI {
     
@@ -16,9 +15,9 @@ class PlantsAPI {
     
     func getPlants(completion: @escaping(_ plants: Array<Plant>) -> Void) {
         
-        sessionManager.adapter = HeaderAdapter(idToken: KeychainWrapper.standard.string(forKey: Constants.ID_TOKEN_KEY)!)
+        sessionManager.adapter = HeaderAdapter(idToken: MSALAuthentication.shared.currentTokenId!)
         
-        let token = "Bearer " + KeychainWrapper.standard.string(forKey: Constants.ID_TOKEN_KEY)!
+        let token = "Bearer " + MSALAuthentication.shared.currentTokenId!
         
         let head: HTTPHeaders = ["Authorization": token]
         

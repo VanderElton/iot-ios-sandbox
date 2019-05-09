@@ -16,12 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        MSALGlobalConfig.loggerConfig.setLogCallback { (level: MSALLogLevel , message: String?, containsPII: Bool) in
-            if(!containsPII){
-                print("%@", message!)
-            }
+        MSALAuthentication.shared.setup()
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let initViewController: UIViewController
+        do {
+            try MSALAuthentication.shared.currentAccount()
+            initViewController = mainViewController()
+        } catch {
+            initViewController = loginViewController()
         }
+        
+        self.window?.rootViewController = initViewController
+        self.window?.makeKeyAndVisible()
         return true
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -48,10 +58,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        guard let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String else {
-            return false
+        
+        if MSALPublicClientApplication.handleMSALResponse(url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String) == true {
+            print("This URL is handle by MSAL")
         }
-        return MSALPublicClientApplication.handleMSALResponse(url, sourceApplication: sourceApplication)
+        return true
+    }
+    
+    func showMainViewController(){
+        self.window?.rootViewController = mainViewController()
+    }
+    
+    func showLoginViewController(){
+        self.window?.rootViewController = loginViewController()
+    }
+    
+    func mainViewController() -> UIViewController {
+        let storyboard = UIStoryboard (name: "Plants", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "PlantNavigation")
+    }
+    
+    func loginViewController() -> UIViewController {
+        let storyboard = UIStoryboard (name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "Auth")
     }
 }
 
