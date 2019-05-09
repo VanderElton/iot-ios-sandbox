@@ -15,11 +15,7 @@ class PlantsAPI {
     
     func getPlants(completion: @escaping(_ plants: Array<Plant>) -> Void) {
         
-        sessionManager.adapter = HeaderAdapter(idToken: MSALAuthentication.shared.currentTokenId!)
-        
-        let token = "Bearer " + MSALAuthentication.shared.currentTokenId!
-        
-        let head: HTTPHeaders = ["Authorization": token]
+        let head: HTTPHeaders = ["Authorization": "Bearer " + MSALAuthentication.shared.currentTokenId!]
         
         Alamofire.request("https://iot-api-dev.weg.net/api/plants", headers: head).validate().responseJSON { response in
             switch response.result {

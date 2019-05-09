@@ -11,7 +11,7 @@ import Foundation
 class PlantMapper {
     
     func toObject(_ object: Dictionary<String, Any>) -> Plant{
-        let plant = Plant(name: object["name"] as! String, description: object["description"] as! String)
+        let plant = Plant(name: object["name"] as? String ?? "", description: object["description"] as? String ?? "")
         
         return plant
     }

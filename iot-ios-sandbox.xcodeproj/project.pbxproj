@@ -142,7 +142,6 @@
 				72ABBD26228074040089047F /* plant */,
 				72ABBD25228073290089047F /* iot-ios-sandbox.entitlements */,
 				72ABBCF722806EED0089047F /* AppDelegate.swift */,
-				72ABBCFB22806EED0089047F /* Main.storyboard */,
 				72ABBCFE22806EEF0089047F /* Assets.xcassets */,
 				72A7FB0D228462B500B75681 /* wegicon.png */,
 				72ABBD0022806EEF0089047F /* LaunchScreen.storyboard */,
@@ -183,6 +182,7 @@
 		72ABBD27228074150089047F /* auth */ = {
 			isa = PBXGroup;
 			children = (
+				72ABBCFB22806EED0089047F /* Main.storyboard */,
 				72ABBD2B228074D50089047F /* AuthViewController.swift */,
 				72A7FB1122846A9000B75681 /* MSALAuthentication.swift */,
 			);
