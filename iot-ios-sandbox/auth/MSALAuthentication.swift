@@ -13,6 +13,24 @@ public class MSALAuthentication {
     
     static let shared = MSALAuthentication()
     
+    var currentAccountIdentifier: String? {
+        get {
+            return UserDefaults.standard.string(forKey: Constants.ACCOUNT_ID)
+        }
+        set (accountIdentifier) {
+            UserDefaults.standard.set(accountIdentifier, forKey: Constants.ACCOUNT_ID)
+        }
+    }
+    
+    var currentTokenId: String? {
+        get {
+            return UserDefaults.standard.string(forKey: Constants.ID_TOKEN_KEY)
+        }
+        set (tokenValue) {
+            UserDefaults.standard.set(tokenValue, forKey: Constants.ID_TOKEN_KEY)
+        }
+    }
+    
     func setup() {
         MSALGlobalConfig.loggerConfig.setLogCallback { (level: MSALLogLevel, message: String?, containsPII: Bool) in
             if let displayableMessage = message {
@@ -39,24 +57,6 @@ public class MSALAuthentication {
             throw AppErrors.PublicClientApplicationCreation(error)
         }
     }
-
-    var currentAccountIdentifier: String? {
-        get {
-            return UserDefaults.standard.string(forKey: Constants.ACCOUNT_ID)
-        }
-        set (accountIdentifier) {
-            UserDefaults.standard.set(accountIdentifier, forKey: Constants.ACCOUNT_ID)
-        }
-    }
-    
-    var currentTokenId: String? {
-        get {
-            return UserDefaults.standard.string(forKey: Constants.ID_TOKEN_KEY)
-        }
-        set (tokenValue) {
-            UserDefaults.standard.set(tokenValue, forKey: Constants.ID_TOKEN_KEY)
-        }
-    }
     
     @discardableResult func currentAccount() throws -> MSALAccount {
         
@@ -74,18 +74,13 @@ public class MSALAuthentication {
         }
         
         guard let account = acc else {
-            cleanupLocalState()
+            clearCurrentAccount()
             throw AppErrors.NoUserSignedIn
         }
         return account
     }
     
-    func clearCurrentAccount() {
-        UserDefaults.standard.removeObject(forKey: Constants.ACCOUNT_ID)
-        UserDefaults.standard.removeObject(forKey: Constants.ID_TOKEN_KEY)
-    }
-    
-    func signInAccount(completion: @escaping (MSALAccount?, _ idToken: String?, Error?) -> Void) {
+    func signInAccount(completion: @escaping (MSALAccount?, _ acessToken: String?, Error?) -> Void) {
         do {
             let clientApplication = try createClientApplication()
             
@@ -103,14 +98,14 @@ public class MSALAuthentication {
                 self.currentAccountIdentifier = signedInAccount.homeAccountId?.identifier
                 self.currentTokenId = acquireTokenResult.idToken
                 
-                completion(signedInAccount, acquireTokenResult.idToken, nil)
+                completion(signedInAccount, acquireTokenResult.accessToken, nil)
             }
         } catch let createApplicationError {
             completion(nil, nil, createApplicationError)
         }
     }
 
-    func acquireTokenSilentForCurrentAccount(forScopes scopes:[String], completion: @escaping (_ idToken: String?, Error?) -> Void) {
+    func acquireTokenSilentForCurrentAccount(forScopes scopes:[String], completion: @escaping (_ acessToken: String?, Error?) -> Void) {
         do {
             let application = try createClientApplication()
             let account = try currentAccount()
@@ -122,14 +117,16 @@ public class MSALAuthentication {
                     return
                 }
                 
-                completion(acquireTokenResult.idToken, nil)
+                self.currentTokenId = acquireTokenResult.idToken
+                
+                completion(acquireTokenResult.accessToken, nil)
             }
         } catch let error {
             completion(nil, error)
         }
     }
     
-    func acquireTokenInteractiveForCurrentAccount(forScopes scopes: [String], completion: @escaping (_ idToken: String?, Error?) -> Void) {
+    func acquireTokenInteractiveForCurrentAccount(forScopes scopes: [String], completion: @escaping (_ acessToken: String?, Error?) -> Void) {
         do {
             let application = try createClientApplication()
             let account = try currentAccount()
@@ -146,7 +143,9 @@ public class MSALAuthentication {
                     return
                 }
                 
-                completion(acquireTokenResult.idToken, nil)
+                self.currentTokenId = acquireTokenResult.idToken
+                
+                completion(acquireTokenResult.accessToken, nil)
             }
         } catch let error {
             completion(nil, error)
@@ -177,7 +176,7 @@ public class MSALAuthentication {
 
     func signOut() throws {
         
-        cleanupLocalState()
+        clearCurrentAccount()
         
         let accountToDelete = try? currentAccount()
         
@@ -187,8 +186,16 @@ public class MSALAuthentication {
         }
     }
     
-    fileprivate func cleanupLocalState() {
+    func clearCurrentAccount() {
+        UserDefaults.standard.removeObject(forKey: Constants.ACCOUNT_ID)
+        UserDefaults.standard.removeObject(forKey: Constants.ID_TOKEN_KEY)
+    }
     
-        self.clearCurrentAccount()
+    func verifyExpiredToken () {
+        acquireTokenForCurrentAccount(forScopes: Constants.SCOPES) { (token: String?, error: Error?) in
+            guard let _ = token, error == nil else {
+                return
+            }
+        }
     }
 }

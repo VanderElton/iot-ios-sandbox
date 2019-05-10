@@ -11,11 +11,10 @@ import Alamofire
 
 class PlantsAPI {
     
-    let sessionManager = Alamofire.SessionManager()
+    //let sessionManager = Alamofire.SessionManager()
+    var head: HTTPHeaders = ["Authorization": "Bearer " + MSALAuthentication.shared.currentTokenId!]
     
     func getPlants(completion: @escaping(_ plants: Array<Plant>) -> Void) {
-        
-        let head: HTTPHeaders = ["Authorization": "Bearer " + MSALAuthentication.shared.currentTokenId!]
         
         Alamofire.request("https://iot-api-dev.weg.net/api/plants", headers: head).validate().responseJSON { response in
             switch response.result {
@@ -28,6 +27,7 @@ class PlantsAPI {
                 break
                 
             case .failure:
+                MSALAuthentication.shared.verifyExpiredToken()
                 print (response.error!)
                 break
             }
@@ -35,8 +35,9 @@ class PlantsAPI {
         }
     }
     
-    func getPlantById(id: Int, completation: @escaping(_ plant: Plant) -> Void) {
-        sessionManager.request("").responseJSON { reponse in
+    func getPlantById(id: String, completation: @escaping(_ plant: Plant) -> Void) {
+        
+        Alamofire.request("https://iot-api-dev.weg.net/api/plants/\(id)", headers: head).validate().responseJSON { reponse in
             switch reponse.result {
             case .success:
                 if let resp = reponse.result.value as? Dictionary<String, Any> {
@@ -45,6 +46,7 @@ class PlantsAPI {
                 }
                 break
             case .failure:
+                MSALAuthentication.shared.verifyExpiredToken()
                 print(reponse.error!)
                 break
             }

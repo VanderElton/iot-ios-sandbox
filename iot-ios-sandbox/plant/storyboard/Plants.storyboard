@@ -63,17 +63,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="plantView" destination="9tt-eL-kX3" id="Lxl-fc-Lir"/>
-                        <segue destination="E2V-gg-MKg" kind="push" identifier="specifyPlant" id="gbu-HE-J8N"/>
+                        <segue destination="E2V-gg-MKg" kind="push" identifier="plantDetail" id="gbu-HE-J8N"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBi-eb-Xhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-500.00000000000006" y="353.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Plant Detail View Controller-->
         <scene sceneID="ORa-nB-9hb">
             <objects>
-                <viewController id="E2V-gg-MKg" sceneMemberID="viewController">
+                <viewController id="E2V-gg-MKg" customClass="PlantDetailViewController" customModule="iot_ios_sandbox" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MMn-ns-Oha"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ae-ZD-Ria"/>
@@ -81,13 +81,33 @@
                     <view key="view" contentMode="scaleToFill" id="fn8-ya-ge1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-bo-9vt">
+                                <rect key="frame" x="20" y="248" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-8p-a9u">
+                                <rect key="frame" x="20" y="328" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="S8J-NN-UNy"/>
+                    <connections>
+                        <outlet property="idLabel" destination="u2T-bo-9vt" id="mP3-9p-GZV"/>
+                        <outlet property="plantTypeLabel" destination="SRH-8p-a9u" id="hDd-jK-9g5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peG-nG-rtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="354"/>
+            <point key="canvasLocation" x="363.768115942029" y="353.57142857142856"/>
         </scene>
         <!--Navigation-->
         <scene sceneID="AR4-ap-fL5">
