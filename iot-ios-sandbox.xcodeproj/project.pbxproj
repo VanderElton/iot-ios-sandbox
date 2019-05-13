@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		72453ED02285B59600160771 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ECF2285B59600160771 /* PlantDetailViewController.swift */; };
+		72453ED72285FEC800160771 /* WegButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ED62285FEC800160771 /* WegButton.swift */; };
+		7251A6BE2289D582003DA7BD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6BD2289D582003DA7BD /* APIRouter.swift */; };
 		72A7FB0E228462B500B75681 /* wegicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A7FB0D228462B500B75681 /* wegicon.png */; };
 		72A7FB102284683800B75681 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB0F2284683800B75681 /* AppErrors.swift */; };
 		72A7FB1222846A9000B75681 /* MSALAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB1122846A9000B75681 /* MSALAuthentication.swift */; };
@@ -53,6 +55,8 @@
 		547BC084B00F76B7237815E5 /* Pods-iot-ios-sandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72453ECF2285B59600160771 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		72453ED62285FEC800160771 /* WegButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WegButton.swift; sourceTree = "<group>"; };
+		7251A6BD2289D582003DA7BD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		72A7FB0D228462B500B75681 /* wegicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wegicon.png; path = Assets.xcassets/wegicon.png; sourceTree = "<group>"; };
 		72A7FB0F2284683800B75681 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		72A7FB1122846A9000B75681 /* MSALAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthentication.swift; sourceTree = "<group>"; };
@@ -114,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72453ED52285FE6D00160771 /* customDesign */ = {
+			isa = PBXGroup;
+			children = (
+				72453ED62285FEC800160771 /* WegButton.swift */,
+			);
+			path = customDesign;
+			sourceTree = "<group>";
+		};
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 		72ABBCF622806EED0089047F /* iot-ios-sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				72453ED52285FE6D00160771 /* customDesign */,
 				72ABBD28228074220089047F /* helper */,
 				72ABBD27228074150089047F /* auth */,
 				72ABBD26228074040089047F /* plant */,
@@ -205,6 +218,7 @@
 			children = (
 				72ABBD35228079D80089047F /* PlantsAPI.swift */,
 				72ABBD3722807A370089047F /* HeaderAdapter.swift */,
+				7251A6BD2289D582003DA7BD /* APIRouter.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -408,7 +422,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -416,7 +429,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSAL.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,10 +515,12 @@
 				72ABBCF822806EED0089047F /* AppDelegate.swift in Sources */,
 				72ABBD3A22807AB00089047F /* PlantViewController.swift in Sources */,
 				72ABBD4222807C650089047F /* PlantMapper.swift in Sources */,
+				7251A6BE2289D582003DA7BD /* APIRouter.swift in Sources */,
 				72ABBD3822807A370089047F /* HeaderAdapter.swift in Sources */,
 				72ABBD3E22807C1B0089047F /* Plant.swift in Sources */,
 				72ABBD36228079D80089047F /* PlantsAPI.swift in Sources */,
 				72ABBD2E228076E30089047F /* Constants.swift in Sources */,
+				72453ED72285FEC800160771 /* WegButton.swift in Sources */,
 				72453ED02285B59600160771 /* PlantDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

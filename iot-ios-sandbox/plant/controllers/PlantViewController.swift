@@ -18,14 +18,20 @@ class PlantViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        PlantsAPI().getPlants() { (resp) in
-            self.plants = resp
-            self.plantView?.reloadData()
-        }
+        refresh()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+    }
+    
+    @objc func refresh(){
+        PlantsAPI().getPlants() { (resp) in
+            self.plants = resp
+            self.plantView.reloadData()
+            self.refreshControl?.endRefreshing()
+        }
     }
     
     // MARK: - Table view data source
@@ -49,6 +55,9 @@ class PlantViewController: UITableViewController {
         do {
             try MSALAuthentication.shared.signOut()
         } catch let error {
+            let alert = UIAlertController(title: "Logout", message: "Erro ao sair", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             print ("Sign out error:\(error)")
         }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -58,13 +67,12 @@ class PlantViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let cell = plantView.cellForRow(at: indexPath){
+        if plantView.cellForRow(at: indexPath) != nil {
             
             plantSelected = plants[indexPath.row]
             performSegue(withIdentifier: "plantDetail", sender: self)
         }
      }
-    
     
      // MARK: - Navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

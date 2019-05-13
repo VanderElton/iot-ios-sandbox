@@ -25,6 +25,11 @@ class AuthViewController: UIViewController {
             (account, token, error) in
             if let error = error {
                 print ("App error: \(error)")
+                
+                let alert = UIAlertController(title: "Erro", message: "Verifique a conexao", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
                 return
             }
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

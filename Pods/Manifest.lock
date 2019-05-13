@@ -3,24 +3,20 @@ PODS:
   - MSAL (0.4.1):
     - MSAL/app-lib (= 0.4.1)
   - MSAL/app-lib (0.4.1)
-  - SwiftKeychainWrapper (3.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - MSAL (~> 0.4.1)
-  - SwiftKeychainWrapper (~> 3.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - MSAL
-    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   MSAL: 1f65b7b3b5dcb041a66f29055adeb3016ff352de
-  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
 
-PODFILE CHECKSUM: 9b8ca18bcf47b4e69953948aea02122807ddc7e2
+PODFILE CHECKSUM: cb9502c86bb24da18dd18a55093a4f4f40579949
 
 COCOAPODS: 1.6.1

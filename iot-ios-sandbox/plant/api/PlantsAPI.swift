@@ -27,6 +27,7 @@ class PlantsAPI {
                 break
                 
             case .failure:
+                
                 MSALAuthentication.shared.verifyExpiredToken()
                 print (response.error!)
                 break
