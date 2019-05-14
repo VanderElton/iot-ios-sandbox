@@ -12,7 +12,6 @@ class PlantDetailViewController: UIViewController {
     
     @IBOutlet weak var idLabel: UILabel?
     @IBOutlet weak var plantTypeLabel: UILabel!
-    @IBOutlet weak var alertButton: UIButton!
     
     var plant: Plant?
 
@@ -23,13 +22,6 @@ class PlantDetailViewController: UIViewController {
             self.idLabel?.text = response.id
             self.plantTypeLabel?.text = response.plantType
         }
-    }
-    
-    @IBAction func alertAction(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Test", message: "........", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
     }
     
 }

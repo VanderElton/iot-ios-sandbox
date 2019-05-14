@@ -10,6 +10,8 @@
 		72453ED02285B59600160771 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ECF2285B59600160771 /* PlantDetailViewController.swift */; };
 		72453ED72285FEC800160771 /* WegButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ED62285FEC800160771 /* WegButton.swift */; };
 		7251A6BE2289D582003DA7BD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6BD2289D582003DA7BD /* APIRouter.swift */; };
+		7251A6C42289E4E7003DA7BD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6C32289E4E7003DA7BD /* Device.swift */; };
+		7251A6C62289E611003DA7BD /* DeviceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6C52289E611003DA7BD /* DeviceMapper.swift */; };
 		72A7FB0E228462B500B75681 /* wegicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A7FB0D228462B500B75681 /* wegicon.png */; };
 		72A7FB102284683800B75681 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB0F2284683800B75681 /* AppErrors.swift */; };
 		72A7FB1222846A9000B75681 /* MSALAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7FB1122846A9000B75681 /* MSALAuthentication.swift */; };
@@ -17,17 +19,17 @@
 		72ABBCFD22806EED0089047F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFB22806EED0089047F /* Main.storyboard */; };
 		72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFE22806EEF0089047F /* Assets.xcassets */; };
 		72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBD0022806EEF0089047F /* LaunchScreen.storyboard */; };
-		72ABBD0D22806EEF0089047F /* iot_ios_sandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD0C22806EEF0089047F /* iot_ios_sandboxTests.swift */; };
 		72ABBD1822806EEF0089047F /* iot_ios_sandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD1722806EEF0089047F /* iot_ios_sandboxUITests.swift */; };
 		72ABBD2C228074D50089047F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD2B228074D50089047F /* AuthViewController.swift */; };
 		72ABBD2E228076E30089047F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD2D228076E30089047F /* Constants.swift */; };
 		72ABBD342280778F0089047F /* Plants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBD332280778F0089047F /* Plants.storyboard */; };
 		72ABBD36228079D80089047F /* PlantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD35228079D80089047F /* PlantsAPI.swift */; };
-		72ABBD3822807A370089047F /* HeaderAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3722807A370089047F /* HeaderAdapter.swift */; };
 		72ABBD3A22807AB00089047F /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3922807AB00089047F /* PlantViewController.swift */; };
 		72ABBD3C22807B830089047F /* PlantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3B22807B830089047F /* PlantViewCell.swift */; };
 		72ABBD3E22807C1B0089047F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3D22807C1B0089047F /* Plant.swift */; };
 		72ABBD4222807C650089047F /* PlantMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD4122807C650089047F /* PlantMapper.swift */; };
+		72B5BE39228AF560000DC199 /* plantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* plantsAPITests.swift */; };
+		72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */; };
 		B522EEC3F447BE85E1892BCD /* Pods_iot_ios_sandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */; };
 		B5FA9E6B3432B809D3C5D899 /* Pods_iot_ios_sandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */; };
 		EDE64669B71FDB2867A7138C /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB65D3E692F00D3F02215E9 /* Pods_iot_ios_sandbox.framework */; };
@@ -57,6 +59,10 @@
 		72453ECF2285B59600160771 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		72453ED62285FEC800160771 /* WegButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WegButton.swift; sourceTree = "<group>"; };
 		7251A6BD2289D582003DA7BD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		7251A6C32289E4E7003DA7BD /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		7251A6C52289E611003DA7BD /* DeviceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMapper.swift; sourceTree = "<group>"; };
+		7251A6C72289EE19003DA7BD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		7251A6C82289EE1A003DA7BD /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		72A7FB0D228462B500B75681 /* wegicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wegicon.png; path = Assets.xcassets/wegicon.png; sourceTree = "<group>"; };
 		72A7FB0F2284683800B75681 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		72A7FB1122846A9000B75681 /* MSALAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthentication.swift; sourceTree = "<group>"; };
@@ -67,7 +73,6 @@
 		72ABBD0122806EEF0089047F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72ABBD0322806EEF0089047F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72ABBD0822806EEF0089047F /* iot-ios-sandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-ios-sandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72ABBD0C22806EEF0089047F /* iot_ios_sandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_ios_sandboxTests.swift; sourceTree = "<group>"; };
 		72ABBD0E22806EEF0089047F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72ABBD1322806EEF0089047F /* iot-ios-sandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-ios-sandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72ABBD1722806EEF0089047F /* iot_ios_sandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_ios_sandboxUITests.swift; sourceTree = "<group>"; };
@@ -77,11 +82,12 @@
 		72ABBD2D228076E30089047F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		72ABBD332280778F0089047F /* Plants.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plants.storyboard; sourceTree = "<group>"; };
 		72ABBD35228079D80089047F /* PlantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAPI.swift; sourceTree = "<group>"; };
-		72ABBD3722807A370089047F /* HeaderAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAdapter.swift; sourceTree = "<group>"; };
 		72ABBD3922807AB00089047F /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
 		72ABBD3B22807B830089047F /* PlantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewCell.swift; sourceTree = "<group>"; };
 		72ABBD3D22807C1B0089047F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		72ABBD4122807C650089047F /* PlantMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMapper.swift; sourceTree = "<group>"; };
+		72B5BE38228AF560000DC199 /* plantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantsAPITests.swift; sourceTree = "<group>"; };
+		72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthenticationTests.swift; sourceTree = "<group>"; };
 		8C96EF3B40716C642C67BFE2 /* Pods-iot-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandbox.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA0D3FF538155C9C063DB6 /* Pods-iot-ios-sandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,24 @@
 			path = customDesign;
 			sourceTree = "<group>";
 		};
+		7251A6C12289E4AD003DA7BD /* plants */ = {
+			isa = PBXGroup;
+			children = (
+				72ABBD4122807C650089047F /* PlantMapper.swift */,
+				72ABBD3D22807C1B0089047F /* Plant.swift */,
+			);
+			path = plants;
+			sourceTree = "<group>";
+		};
+		7251A6C22289E4C3003DA7BD /* devices */ = {
+			isa = PBXGroup;
+			children = (
+				7251A6C32289E4E7003DA7BD /* Device.swift */,
+				7251A6C52289E611003DA7BD /* DeviceMapper.swift */,
+			);
+			path = devices;
+			sourceTree = "<group>";
+		};
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +192,8 @@
 		72ABBD0B22806EEF0089047F /* iot-ios-sandboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				72ABBD0C22806EEF0089047F /* iot_ios_sandboxTests.swift */,
+				72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */,
+				72B5BE38228AF560000DC199 /* plantsAPITests.swift */,
 				72ABBD0E22806EEF0089047F /* Info.plist */,
 			);
 			path = "iot-ios-sandboxTests";
@@ -217,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				72ABBD35228079D80089047F /* PlantsAPI.swift */,
-				72ABBD3722807A370089047F /* HeaderAdapter.swift */,
 				7251A6BD2289D582003DA7BD /* APIRouter.swift */,
 			);
 			path = api;
@@ -236,8 +260,8 @@
 		72ABBD31228077500089047F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				72ABBD3D22807C1B0089047F /* Plant.swift */,
-				72ABBD4122807C650089047F /* PlantMapper.swift */,
+				7251A6C22289E4C3003DA7BD /* devices */,
+				7251A6C12289E4AD003DA7BD /* plants */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -368,6 +392,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 72ABBCEB22806EED0089047F;
 			productRefGroup = 72ABBCF522806EED0089047F /* Products */;
@@ -509,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A7FB1222846A9000B75681 /* MSALAuthentication.swift in Sources */,
+				7251A6C62289E611003DA7BD /* DeviceMapper.swift in Sources */,
 				72ABBD2C228074D50089047F /* AuthViewController.swift in Sources */,
 				72ABBD3C22807B830089047F /* PlantViewCell.swift in Sources */,
 				72A7FB102284683800B75681 /* AppErrors.swift in Sources */,
@@ -516,7 +542,7 @@
 				72ABBD3A22807AB00089047F /* PlantViewController.swift in Sources */,
 				72ABBD4222807C650089047F /* PlantMapper.swift in Sources */,
 				7251A6BE2289D582003DA7BD /* APIRouter.swift in Sources */,
-				72ABBD3822807A370089047F /* HeaderAdapter.swift in Sources */,
+				7251A6C42289E4E7003DA7BD /* Device.swift in Sources */,
 				72ABBD3E22807C1B0089047F /* Plant.swift in Sources */,
 				72ABBD36228079D80089047F /* PlantsAPI.swift in Sources */,
 				72ABBD2E228076E30089047F /* Constants.swift in Sources */,
@@ -529,7 +555,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72ABBD0D22806EEF0089047F /* iot_ios_sandboxTests.swift in Sources */,
+				72B5BE39228AF560000DC199 /* plantsAPITests.swift in Sources */,
+				72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +588,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				72ABBCFC22806EED0089047F /* Base */,
+				7251A6C72289EE19003DA7BD /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -569,6 +597,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				72ABBD0122806EEF0089047F /* Base */,
+				7251A6C82289EE1A003DA7BD /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -580,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -641,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

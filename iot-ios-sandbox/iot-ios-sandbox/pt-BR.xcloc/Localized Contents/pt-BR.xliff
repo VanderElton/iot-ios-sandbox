@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="iot-ios-sandbox/auth/Base.lproj/Main.storyboard" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="h9M-jK-maS.normalTitle">
+        <source>Acesso</source>
+        <target>Acesso</target>
+        <note>Class = "UIButton"; normalTitle = "Acesso"; ObjectID = "h9M-jK-maS";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iot-ios-sandbox/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="pt-BR">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>iot-ios-sandbox</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

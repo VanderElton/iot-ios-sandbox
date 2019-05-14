@@ -15,7 +15,7 @@ public struct Constants {
     static let SCOPES: [String] = ["https://devwegme.onmicrosoft.com/apps-sandbox/read.write"]
     static let POLICY = "B2C_1_signupin"
     static let TENANT = "devwegme.onmicrosoft.com"
-    static let BASE_URL = "https://iot-api-dev.weg.net"
+    static let BASE_URL = "https://iot-api-dev.weg.net/api"
     
     /* UserDefaults KEYS */
     static let ID_TOKEN_KEY = "msal.idtoken"
