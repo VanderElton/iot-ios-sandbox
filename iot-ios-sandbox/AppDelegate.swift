@@ -21,11 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
         let initViewController: UIViewController
-        do {
-            try MSALAuthentication.shared.currentAccount()
+        if CommandLine.arguments.contains("Test") {
             initViewController = mainViewController()
-        } catch {
-            initViewController = loginViewController()
+        } else {
+            do {
+                try MSALAuthentication.shared.currentAccount()
+                initViewController = mainViewController()
+            } catch {
+                initViewController = loginViewController()
+            }
         }
         
         self.window?.rootViewController = initViewController

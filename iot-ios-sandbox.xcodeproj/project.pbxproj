@@ -730,7 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iot-ios-sandbox/iot-ios-sandbox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -750,7 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iot-ios-sandbox/iot-ios-sandbox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -770,7 +770,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,7 +792,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -813,7 +813,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandboxUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -834,7 +834,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YKL6L2F6CS;
+				DEVELOPMENT_TEAM = PD5X9XADX4;
 				INFOPLIST_FILE = "iot-ios-sandboxUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

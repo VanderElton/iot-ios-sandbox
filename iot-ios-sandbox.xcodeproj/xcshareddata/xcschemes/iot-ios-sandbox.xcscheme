@@ -48,16 +48,6 @@
                ReferencedContainer = "container:iot-ios-sandbox.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72B5BE3D228B00FE000DC199"
-               BuildableName = "MSALAuthebticationTests.xctest"
-               BlueprintName = "MSALAuthebticationTests"
-               ReferencedContainer = "container:iot-ios-sandbox.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
