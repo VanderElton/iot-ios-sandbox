@@ -42,7 +42,12 @@ public enum APIRouter: URLRequestConvertible {
     
     public func asURLRequest() throws -> URLRequest {
         
-        let token = "Bearer " + MSALAuthentication.shared.currentTokenId!
+        var token = ""
+        
+        if (MSALAuthentication.shared.currentTokenId != nil) {
+            token = "Bearer " + MSALAuthentication.shared.currentTokenId!
+        }
+            
         let url = try Constants.BASE_URL.asURL()
         
         var request = URLRequest(url: url.appendingPathComponent(path))

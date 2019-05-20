@@ -56,6 +56,7 @@
 		1337D121AB698C653D17958A /* Pods-iot-ios-sandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		547BC084B00F76B7237815E5 /* Pods-iot-ios-sandboxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxUITests.release.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		720E39192292E767007192E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		72453ECF2285B59600160771 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		72453ED62285FEC800160771 /* WegButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WegButton.swift; sourceTree = "<group>"; };
 		7251A6BD2289D582003DA7BD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
+				720E39192292E767007192E8 /* README.md */,
 				72ABBCF622806EED0089047F /* iot-ios-sandbox */,
 				72ABBD0B22806EEF0089047F /* iot-ios-sandboxTests */,
 				72ABBD1622806EEF0089047F /* iot-ios-sandboxUITests */,
@@ -346,6 +348,7 @@
 				72ABBD0F22806EEF0089047F /* Sources */,
 				72ABBD1022806EEF0089047F /* Frameworks */,
 				72ABBD1122806EEF0089047F /* Resources */,
+				4899C5BCD84FEF8FA158EBA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -436,6 +439,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4899C5BCD84FEF8FA158EBA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MSAL/MSAL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSAL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandboxUITests/Pods-iot-ios-sandboxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		53B061AD5BC63A1F5ACAFFE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

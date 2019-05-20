@@ -17,17 +17,30 @@ class iot_ios_sandboxUITests: XCTestCase {
         super.setUp()
         
         continueAfterFailure = false
+        
+        UserDefaults.standard.set(".", forKey: "msal.idtoken")
     }
 
     override func tearDown() {
-        
+        app.terminate()
     }
 
-    func testExample() {
+    func testMainView() {
         
         app = XCUIApplication()
         app.launchArguments = ["Test"]
         app.launch()
+        
+        app.navigationBars["WEG"].buttons["Sair"].tap()
+        
+    }
+    
+    func testLoginView() {
+        
+        app = XCUIApplication()
+        app.launch()
+        
+        XCTAssertTrue(app.buttons["Acesso"].isHittable)
     }
 
 }
