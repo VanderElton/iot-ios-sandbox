@@ -30,6 +30,7 @@
 		72ABBD4222807C650089047F /* PlantMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD4122807C650089047F /* PlantMapper.swift */; };
 		72B5BE39228AF560000DC199 /* plantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* plantsAPITests.swift */; };
 		72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */; };
+		72B6343122930DB000E7B514 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 72B6343022930DB000E7B514 /* Jenkinsfile */; };
 		B522EEC3F447BE85E1892BCD /* Pods_iot_ios_sandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */; };
 		B5FA9E6B3432B809D3C5D899 /* Pods_iot_ios_sandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */; };
 		EDE64669B71FDB2867A7138C /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB65D3E692F00D3F02215E9 /* Pods_iot_ios_sandbox.framework */; };
@@ -89,6 +90,7 @@
 		72ABBD4122807C650089047F /* PlantMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMapper.swift; sourceTree = "<group>"; };
 		72B5BE38228AF560000DC199 /* plantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantsAPITests.swift; sourceTree = "<group>"; };
 		72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthenticationTests.swift; sourceTree = "<group>"; };
+		72B6343022930DB000E7B514 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
 		8C96EF3B40716C642C67BFE2 /* Pods-iot-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandbox.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA0D3FF538155C9C063DB6 /* Pods-iot-ios-sandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
+				72B6343022930DB000E7B514 /* Jenkinsfile */,
 				720E39192292E767007192E8 /* README.md */,
 				72ABBCF622806EED0089047F /* iot-ios-sandbox */,
 				72ABBD0B22806EEF0089047F /* iot-ios-sandboxTests */,
@@ -419,6 +422,7 @@
 				72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */,
 				72ABBD342280778F0089047F /* Plants.storyboard in Resources */,
 				72ABBCFD22806EED0089047F /* Main.storyboard in Resources */,
+				72B6343122930DB000E7B514 /* Jenkinsfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
