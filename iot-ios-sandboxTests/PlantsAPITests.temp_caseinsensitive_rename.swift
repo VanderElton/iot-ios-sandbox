@@ -10,14 +10,14 @@ import XCTest
 @testable import iot_ios_sandbox
 
 class PlantsAPITests: XCTestCase {
-    
+
     var json: [String: Any] = [
-        
-            "name":"name.test",
-            "description":"description.test",
-            "id":"id.test",
-            "plantType":"plantType.test",
-            "devices":[]
+
+            "name": "name.test",
+            "description": "description.test",
+            "id": "id.test",
+            "plantType": "plantType.test",
+            "devices": []
     ]
 
     func testPlantMapper() {
