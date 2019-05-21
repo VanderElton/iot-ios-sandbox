@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72453ED02285B59600160771 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ECF2285B59600160771 /* PlantDetailViewController.swift */; };
 		72453ED72285FEC800160771 /* WegButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72453ED62285FEC800160771 /* WegButton.swift */; };
+		724A2EA922944A400024CE55 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 724A2EA822944A400024CE55 /* .swiftlint.yml */; };
 		7251A6BE2289D582003DA7BD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6BD2289D582003DA7BD /* APIRouter.swift */; };
 		7251A6C42289E4E7003DA7BD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6C32289E4E7003DA7BD /* Device.swift */; };
 		7251A6C62289E611003DA7BD /* DeviceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7251A6C52289E611003DA7BD /* DeviceMapper.swift */; };
@@ -19,7 +20,7 @@
 		72ABBCFD22806EED0089047F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFB22806EED0089047F /* Main.storyboard */; };
 		72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBCFE22806EEF0089047F /* Assets.xcassets */; };
 		72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBD0022806EEF0089047F /* LaunchScreen.storyboard */; };
-		72ABBD1822806EEF0089047F /* iot_ios_sandboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD1722806EEF0089047F /* iot_ios_sandboxUITests.swift */; };
+		72ABBD1822806EEF0089047F /* IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD1722806EEF0089047F /* IOSUITests.swift */; };
 		72ABBD2C228074D50089047F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD2B228074D50089047F /* AuthViewController.swift */; };
 		72ABBD2E228076E30089047F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD2D228076E30089047F /* Constants.swift */; };
 		72ABBD342280778F0089047F /* Plants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72ABBD332280778F0089047F /* Plants.storyboard */; };
@@ -28,9 +29,10 @@
 		72ABBD3C22807B830089047F /* PlantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3B22807B830089047F /* PlantViewCell.swift */; };
 		72ABBD3E22807C1B0089047F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3D22807C1B0089047F /* Plant.swift */; };
 		72ABBD4222807C650089047F /* PlantMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD4122807C650089047F /* PlantMapper.swift */; };
-		72B5BE39228AF560000DC199 /* plantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* plantsAPITests.swift */; };
+		72B5BE39228AF560000DC199 /* PlantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* PlantsAPITests.swift */; };
 		72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */; };
 		72B6343122930DB000E7B514 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 72B6343022930DB000E7B514 /* Jenkinsfile */; };
+		72B63433229334FA00E7B514 /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 72B63432229334FA00E7B514 /* sonar-project.properties */; };
 		B522EEC3F447BE85E1892BCD /* Pods_iot_ios_sandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */; };
 		B5FA9E6B3432B809D3C5D899 /* Pods_iot_ios_sandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */; };
 		EDE64669B71FDB2867A7138C /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB65D3E692F00D3F02215E9 /* Pods_iot_ios_sandbox.framework */; };
@@ -60,6 +62,7 @@
 		720E39192292E767007192E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		72453ECF2285B59600160771 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		72453ED62285FEC800160771 /* WegButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WegButton.swift; sourceTree = "<group>"; };
+		724A2EA822944A400024CE55 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		7251A6BD2289D582003DA7BD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		7251A6C32289E4E7003DA7BD /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		7251A6C52289E611003DA7BD /* DeviceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMapper.swift; sourceTree = "<group>"; };
@@ -77,7 +80,7 @@
 		72ABBD0822806EEF0089047F /* iot-ios-sandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-ios-sandboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72ABBD0E22806EEF0089047F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72ABBD1322806EEF0089047F /* iot-ios-sandboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-ios-sandboxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72ABBD1722806EEF0089047F /* iot_ios_sandboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_ios_sandboxUITests.swift; sourceTree = "<group>"; };
+		72ABBD1722806EEF0089047F /* IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUITests.swift; sourceTree = "<group>"; };
 		72ABBD1922806EEF0089047F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72ABBD25228073290089047F /* iot-ios-sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iot-ios-sandbox.entitlements"; sourceTree = "<group>"; };
 		72ABBD2B228074D50089047F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -88,9 +91,10 @@
 		72ABBD3B22807B830089047F /* PlantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewCell.swift; sourceTree = "<group>"; };
 		72ABBD3D22807C1B0089047F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		72ABBD4122807C650089047F /* PlantMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMapper.swift; sourceTree = "<group>"; };
-		72B5BE38228AF560000DC199 /* plantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantsAPITests.swift; sourceTree = "<group>"; };
+		72B5BE38228AF560000DC199 /* PlantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAPITests.swift; sourceTree = "<group>"; };
 		72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthenticationTests.swift; sourceTree = "<group>"; };
 		72B6343022930DB000E7B514 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
+		72B63432229334FA00E7B514 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		8C96EF3B40716C642C67BFE2 /* Pods-iot-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandbox.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA0D3FF538155C9C063DB6 /* Pods-iot-ios-sandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
+				724A2EA822944A400024CE55 /* .swiftlint.yml */,
+				72B63432229334FA00E7B514 /* sonar-project.properties */,
 				72B6343022930DB000E7B514 /* Jenkinsfile */,
 				720E39192292E767007192E8 /* README.md */,
 				72ABBCF622806EED0089047F /* iot-ios-sandbox */,
@@ -198,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */,
-				72B5BE38228AF560000DC199 /* plantsAPITests.swift */,
+				72B5BE38228AF560000DC199 /* PlantsAPITests.swift */,
 				72ABBD0E22806EEF0089047F /* Info.plist */,
 			);
 			path = "iot-ios-sandboxTests";
@@ -207,7 +213,7 @@
 		72ABBD1622806EEF0089047F /* iot-ios-sandboxUITests */ = {
 			isa = PBXGroup;
 			children = (
-				72ABBD1722806EEF0089047F /* iot_ios_sandboxUITests.swift */,
+				72ABBD1722806EEF0089047F /* IOSUITests.swift */,
 				72ABBD1922806EEF0089047F /* Info.plist */,
 			);
 			path = "iot-ios-sandboxUITests";
@@ -314,6 +320,7 @@
 				72ABBCF122806EED0089047F /* Frameworks */,
 				72ABBCF222806EED0089047F /* Resources */,
 				53B061AD5BC63A1F5ACAFFE7 /* [CP] Embed Pods Frameworks */,
+				724A2EA5229440950024CE55 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -417,7 +424,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724A2EA922944A400024CE55 /* .swiftlint.yml in Resources */,
 				72A7FB0E228462B500B75681 /* wegicon.png in Resources */,
+				72B63433229334FA00E7B514 /* sonar-project.properties in Resources */,
 				72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */,
 				72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */,
 				72ABBD342280778F0089047F /* Plants.storyboard in Resources */,
@@ -490,6 +499,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		724A2EA5229440950024CE55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		7DB848ADC2DD4BC6747C9FBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -586,7 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B5BE39228AF560000DC199 /* plantsAPITests.swift in Sources */,
+				72B5BE39228AF560000DC199 /* PlantsAPITests.swift in Sources */,
 				72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,7 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72ABBD1822806EEF0089047F /* iot_ios_sandboxUITests.swift in Sources */,
+				72ABBD1822806EEF0089047F /* IOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
