@@ -41,6 +41,7 @@ class IOSUITests: XCTestCase {
         app.launch()
 
         XCTAssertTrue(app.buttons["Acess"].isHittable)
+        app.otherElements.containing(.image,identifier:"wegicon.png").element.tap()
     }
 
 }

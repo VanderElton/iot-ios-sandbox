@@ -3,7 +3,13 @@
 pipeline {
     agent {label 'maven-slave'}
     stages {
-        stage('
+        stage('Reports'){
+            publishHTML (target: [
+                reportDir: 'Reports'
+                reportFiles: 'teste.html'
+                reportName: "Test Report"
+            ])
+        }
         stage('Documentation'){
             agent {label 'nodejs-slave'}
             steps {

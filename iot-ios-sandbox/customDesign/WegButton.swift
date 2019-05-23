@@ -10,7 +10,6 @@ import UIKit
 
 @IBDesignable
 class WegButton: UIButton {
-
     @IBInspectable var borderColor: UIColor = UIColor.clear {
         didSet {
             layer.borderColor = borderColor.cgColor
@@ -73,5 +72,4 @@ class WegButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
 }
