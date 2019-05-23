@@ -28,7 +28,17 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       systemAttachmentLifetime = "keepAlways"
       codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "72ABBCF322806EED0089047F"
+            BuildableName = "iot-ios-sandbox.app"
+            BlueprintName = "iot-ios-sandbox"
+            ReferencedContainer = "container:iot-ios-sandbox.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">

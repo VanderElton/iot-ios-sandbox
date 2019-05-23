@@ -5,6 +5,10 @@
 ## Build generated
 build/
 DerivedData/
+Reports/
+
+## SonarQube generated
+.scannerwork/
 
 ## Various settings
 *.pbxuser
