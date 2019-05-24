@@ -2,6 +2,7 @@
 
 pipeline {
     agent {label 'maven-slave'}
+    stages {
         stage('Documentation'){
             agent {label 'nodejs-slave'}
             steps {
@@ -13,4 +14,5 @@ pipeline {
                 }
             }
         }
+    }
 }
