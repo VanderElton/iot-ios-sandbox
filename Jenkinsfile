@@ -3,13 +3,22 @@
 pipeline {
     agent {label 'maven-slave'}
     stages {
-        stage('SonarQube'){
+        stage('Lint'){
             steps {
                 script {
-                    docker.image("shepeliev/android-sdk").inside(){
-                        dir('iot-ios-sandbox'){
-                            sh './gradlew sonarqube'
+                    docker.image("norionomura/swiftlint").inside(){
+                        dir('.'){
+                            sh 'swiftlint'
                         }
+                    }
+                }
+            }
+        }
+       /* stage('SonarQube'){
+            steps {
+                script {
+                    dir('iot-ios-sandbox'){
+                        sh './gradlew sonarqube'
                     }
                 }
             }
@@ -18,7 +27,7 @@ pipeline {
             steps {
                 script {
                     docker.image("swift").inside(){
-                        dir('iot-ios-sandbox'){
+                        dir('.'){
                             sh './gradlew build'
                         }
                     }
@@ -35,6 +44,6 @@ pipeline {
                     archiveArtifacts artifacts: 'doc/**',fingerprint: true
                 }
             }
-        }
+      */  }
     }
 }
