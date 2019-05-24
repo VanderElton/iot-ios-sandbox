@@ -2,5 +2,5 @@ projectKey=iot-ios-sandbox
 serverUrl=http://0.0.0.0:9000
 serverVersion=7.1.0.11001
 dashboardUrl=http://0.0.0.0:9000/dashboard/index/iot-ios-sandbox
-ceTaskId=AWrlnaPvtePMI4VkLrAj
-ceTaskUrl=http://0.0.0.0:9000/api/ce/task?id=AWrlnaPvtePMI4VkLrAj
+ceTaskId=AWrl8zx5tePMI4VkLrAk
+ceTaskUrl=http://0.0.0.0:9000/api/ce/task?id=AWrl8zx5tePMI4VkLrAk
