@@ -3,6 +3,17 @@
 pipeline {
     agent {label 'maven-slave'}
     stages {
+        stage('Build'){
+            steps {
+                script {
+                    docker.image("swift").inside(){
+                        dir('iot-ios-sandbox'){
+                            sh './gradlew build'
+                        }
+                    }
+                }
+            }
+        }
         stage('Documentation'){
             agent {label 'nodejs-slave'}
             steps {

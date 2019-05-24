@@ -29,6 +29,7 @@
 		72ABBD3C22807B830089047F /* PlantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3B22807B830089047F /* PlantViewCell.swift */; };
 		72ABBD3E22807C1B0089047F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD3D22807C1B0089047F /* Plant.swift */; };
 		72ABBD4222807C650089047F /* PlantMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ABBD4122807C650089047F /* PlantMapper.swift */; };
+		72B308432298171E00BBFC58 /* build.gradle in Resources */ = {isa = PBXBuildFile; fileRef = 72B308422298171E00BBFC58 /* build.gradle */; };
 		72B5BE39228AF560000DC199 /* PlantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* PlantsAPITests.swift */; };
 		72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */; };
 		72B6343122930DB000E7B514 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 72B6343022930DB000E7B514 /* Jenkinsfile */; };
@@ -91,6 +92,7 @@
 		72ABBD3B22807B830089047F /* PlantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewCell.swift; sourceTree = "<group>"; };
 		72ABBD3D22807C1B0089047F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		72ABBD4122807C650089047F /* PlantMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantMapper.swift; sourceTree = "<group>"; };
+		72B308422298171E00BBFC58 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
 		72B5BE38228AF560000DC199 /* PlantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAPITests.swift; sourceTree = "<group>"; };
 		72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthenticationTests.swift; sourceTree = "<group>"; };
 		72B6343022930DB000E7B514 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		72ABBCEB22806EED0089047F = {
 			isa = PBXGroup;
 			children = (
+				72B308422298171E00BBFC58 /* build.gradle */,
 				724A2EA822944A400024CE55 /* .swiftlint.yml */,
 				72B63432229334FA00E7B514 /* sonar-project.properties */,
 				72B6343022930DB000E7B514 /* Jenkinsfile */,
@@ -428,6 +431,7 @@
 				72A7FB0E228462B500B75681 /* wegicon.png in Resources */,
 				72B63433229334FA00E7B514 /* sonar-project.properties in Resources */,
 				72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */,
+				72B308432298171E00BBFC58 /* build.gradle in Resources */,
 				72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */,
 				72ABBD342280778F0089047F /* Plants.storyboard in Resources */,
 				72ABBCFD22806EED0089047F /* Main.storyboard in Resources */,
