@@ -33,7 +33,6 @@
 		72B5BE39228AF560000DC199 /* PlantsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE38228AF560000DC199 /* PlantsAPITests.swift */; };
 		72B5BE49228B0164000DC199 /* MSALAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */; };
 		72B6343122930DB000E7B514 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 72B6343022930DB000E7B514 /* Jenkinsfile */; };
-		72B63433229334FA00E7B514 /* sonar-project.properties in Resources */ = {isa = PBXBuildFile; fileRef = 72B63432229334FA00E7B514 /* sonar-project.properties */; };
 		B522EEC3F447BE85E1892BCD /* Pods_iot_ios_sandboxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F6C2AE162939AE94A240AA /* Pods_iot_ios_sandboxUITests.framework */; };
 		B5FA9E6B3432B809D3C5D899 /* Pods_iot_ios_sandboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */; };
 		EDE64669B71FDB2867A7138C /* Pods_iot_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB65D3E692F00D3F02215E9 /* Pods_iot_ios_sandbox.framework */; };
@@ -96,7 +95,6 @@
 		72B5BE38228AF560000DC199 /* PlantsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsAPITests.swift; sourceTree = "<group>"; };
 		72B5BE48228B0164000DC199 /* MSALAuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSALAuthenticationTests.swift; sourceTree = "<group>"; };
 		72B6343022930DB000E7B514 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
-		72B63432229334FA00E7B514 /* sonar-project.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonar-project.properties"; sourceTree = "<group>"; };
 		8C96EF3B40716C642C67BFE2 /* Pods-iot-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandbox.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandbox/Pods-iot-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		A88E1ECB7C7D4EA859B232F9 /* Pods_iot_ios_sandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_ios_sandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA0D3FF538155C9C063DB6 /* Pods-iot-ios-sandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-ios-sandboxTests.debug.xcconfig"; path = "Target Support Files/Pods-iot-ios-sandboxTests/Pods-iot-ios-sandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				72B308422298171E00BBFC58 /* build.gradle */,
 				724A2EA822944A400024CE55 /* .swiftlint.yml */,
-				72B63432229334FA00E7B514 /* sonar-project.properties */,
 				72B6343022930DB000E7B514 /* Jenkinsfile */,
 				720E39192292E767007192E8 /* README.md */,
 				72ABBCF622806EED0089047F /* iot-ios-sandbox */,
@@ -429,7 +426,6 @@
 			files = (
 				724A2EA922944A400024CE55 /* .swiftlint.yml in Resources */,
 				72A7FB0E228462B500B75681 /* wegicon.png in Resources */,
-				72B63433229334FA00E7B514 /* sonar-project.properties in Resources */,
 				72ABBD0222806EEF0089047F /* LaunchScreen.storyboard in Resources */,
 				72B308432298171E00BBFC58 /* build.gradle in Resources */,
 				72ABBCFF22806EEF0089047F /* Assets.xcassets in Resources */,

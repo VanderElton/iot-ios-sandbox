@@ -3,6 +3,17 @@
 pipeline {
     agent {label 'maven-slave'}
     stages {
+        stage('SonarQube'){
+            steps {
+                script {
+                    docker.image("shepeliev/android-sdk").inside(){
+                        dir('iot-ios-sandbox'){
+                            sh './gradlew sonarqube'
+                        }
+                    }
+                }
+            }
+        }
         stage('Build'){
             steps {
                 script {

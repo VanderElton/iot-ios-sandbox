@@ -1,5 +1,25 @@
+buildscript {
+    repositories {
+}
+    dependencies {
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.1"
+
+    }
+}
+
 plugins {
     id "org.openbakery.xcode-plugin" version "0.19.1"
+    id "org.sonarqube" version "2.5"
+}
+
+allprojects{
+    sonarqube{
+        properties{
+            property "sonar.language", "swift"
+            property "sonar.sources", "iot-ios-sandbox"
+            property "sonar.host.url", "http://sonar.weg.net:4000"
+        }
+    }
 }
 
 xcodebuild {
