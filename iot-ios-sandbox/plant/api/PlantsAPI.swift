@@ -1,10 +1,3 @@
-//
-//  PlantsAPI.swift
-//  iot-ios-sandbox
-//
-//  Created by ITLABS WEG on 06/05/19.
-//  Copyright © 2019 WEG. All rights reserved.
-//
 
 import Foundation
 import Alamofire

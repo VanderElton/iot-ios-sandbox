@@ -1,10 +1,3 @@
-//
-//  MSALAuthentication.swift
-//  iot-ios-sandbox
-//
-//  Created by ITLABS WEG on 09/05/19.
-//  Copyright © 2019 WEG. All rights reserved.
-//
 
 import MSAL
 

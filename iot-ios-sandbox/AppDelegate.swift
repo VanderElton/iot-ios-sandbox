@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  iot-ios-sandbox
-//
-//  Created by ITLABS WEG on 26/04/19.
-//  Copyright © 2019 WEG. All rights reserved.
-//
 
 import UIKit
 import MSAL

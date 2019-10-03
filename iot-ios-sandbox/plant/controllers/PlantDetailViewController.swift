@@ -1,10 +1,3 @@
-//
-//  PlantDetailViewController.swift
-//  iot-ios-sandbox
-//
-//  Created by ITLABS WEG on 10/05/19.
-//  Copyright © 2019 WEG. All rights reserved.
-//
 
 import UIKit
 

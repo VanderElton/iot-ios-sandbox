@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)net.weg.iot-ios-sandbox</string>
+		<string>$(AppIdentifierPrefix)<your_bundle></string>
 		<string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
 	</array>
 </dict>

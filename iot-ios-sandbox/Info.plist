@@ -16,7 +16,7 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>msauth.net.weg.iot-ios-sandbox</string>
+				<string>msauth.<your_bundle></string>
 			</array>
 		</dict>
 	</array>

@@ -1,10 +1,3 @@
-//
-//  iot_ios_sandboxUITests.swift
-//  iot-ios-sandboxUITests
-//
-//  Created by ITLABS WEG on 06/05/19.
-//  Copyright © 2019 WEG. All rights reserved.
-//
 
 import XCTest
 @testable import iot_ios_sandbox
@@ -41,7 +34,6 @@ class IOSUITests: XCTestCase {
         app.launch()
 
         XCTAssertTrue(app.buttons["Acess"].isHittable)
-        app.otherElements.containing(.image,identifier:"wegicon.png").element.tap()
     }
 
 }
